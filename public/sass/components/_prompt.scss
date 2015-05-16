@@ -1,0 +1,36 @@
+// Message Prompt
+// Resource: http://www.sitepoint.com/sass-component-10-minutes/
+// %This is a placeholder. Placeholders do not get included in the css markup unless called.
+
+%message {
+	padding: .5em;
+	margin-bottom: 40px;
+	@include border-radius(3px);
+	border: 1px solid;
+	font-size: 14px;
+}
+
+@mixin message($color) {
+	@extend %message;
+	color: #666;
+	text-align: center;
+	border-color: lighten($color, 20%);
+	background: lighten($color, 40%); 
+	clear: left;
+}
+
+.message-error {
+	@include message(#b94a48);
+}
+
+.message-valid {
+	@include message(#39ba9a);
+}
+
+.message-warning {
+	@include message(#ffb522);
+}
+
+.message-info {
+	@include message(#3a87ad);
+}

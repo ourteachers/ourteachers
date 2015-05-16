@@ -1,0 +1,30 @@
+.box {
+	@include breakpoint($small) {
+		@include span(12);
+	}
+	@include breakpoint($medium) {
+		@include span(4);
+	}
+}
+
+.box {
+	margin-bottom: 40px;
+	text-align: center;
+	p {
+		padding: 0 40px;
+	}
+	img {
+		margin-bottom: 10px;
+	}
+	@include breakpoint($medium) {
+		margin-bottom: 0;
+	}
+}
+
+
+
+.box-lg {
+	@include breakpoint($medium) {
+		@include span(6);
+	}
+}
