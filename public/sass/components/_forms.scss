@@ -1,0 +1,213 @@
+/**
+* Form elements: Inputs, buttons, etc.
+*/
+
+form {
+}
+
+fieldset {
+  border: none;
+  margin-bottom: 30px;
+  padding: 0;
+  border-top: 1px solid $line-color;
+}
+
+legend {
+  margin-bottom: 20px;
+  padding-right: 20px;
+  font-weight: 600;
+}
+
+select {
+  color: $light-text;
+}
+
+label,
+input,
+button,
+select,
+textarea {
+}
+
+input,
+button,
+select,
+textarea {
+  // font-family: $form-font-family; // And only set font-family here for those that need it (note the missing label element)
+}
+
+label {
+  display: block;
+  margin: 0 20px 5px 0;
+  font-size: 14px;
+  color: $body-color;
+}
+
+label.light {
+  font-size: 14px;
+  display: inline-block;
+}
+
+.button,
+button,
+input[type="submit"],
+input[type="reset"],
+input[type="button"] {
+	border: none;
+	padding: 0;
+
+  &:hover {
+    
+  }
+
+  &:active {
+    
+  }
+  &:focus {
+    outline: none;
+
+  }
+}
+
+
+input[type="text"],
+input[type="password"],
+input[type="email"],
+textarea,
+select {
+
+  &:focus {
+    
+  }
+}
+
+
+input[type="checkbox"] {
+  
+}
+
+
+// Remove Default Form Styling
+
+input[type="text"],
+input[type="password"],
+input[type="date"],
+input[type="datetime"],
+input[type="email"],
+input[type="number"],
+input[type="search"],
+input[type="tel"],
+input[type="time"],
+input[type="url"],
+textarea,
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  appearance: none;
+  border: 1px solid $border-color;
+  height: auto;
+  margin: 0;
+  outline: 0;
+  padding-left: 12px;
+  background-color: $white;
+  box-shadow: none;
+  width: 100%;
+  min-height: 45px;
+  font-size: 14px;
+  margin-bottom: 15px;
+  @include border-radius(3px);
+}
+
+
+
+
+input:focus,
+textarea:focus,
+select:focus {
+  border: 1px solid $primary-color;
+}
+
+
+input[type="number"] {
+	font-weight: 100;
+}
+// :checked styles are applied to checked checkboxes or radio buttons, e.g.
+
+// input:checked ~ label {
+//     font-weight: bold;
+// }
+
+// Placeholder Text
+input::-webkit-input-placeholder { color: $light-text; }
+input::-moz-placeholder { color: $light-text; }
+input:-ms-input-placeholder { color: $light-text; }
+input::placeholder { color: $light-text; }
+
+
+
+
+input[type="radio"],
+input[type="checkbox"] {
+  margin: 0 8px 8px 0;
+}
+
+
+// This is the dollar sign in the custom amount field on the donate page.
+
+.dfield {
+  width: 100%;
+  position: relative;
+  input[type="text"] {
+    padding: 0 40px;
+    font-size: 16px;
+  }
+}
+
+.dfield_label {
+    display: initial;
+    position: absolute;
+    z-index: 999;
+    left: 0;
+    line-height: 65px;
+    margin: 0 0 0 15px;
+    font-size: 30px;
+    color: $light-text;
+    font-weight: 400;
+}
+
+// Label next to form fields on donate page.
+
+.sub-input {
+  display: block;
+  margin-top: 12px;
+  font-size: 13px;
+  font-weight: 600;
+  color: $light-text;
+  // * placed after every sub input. Designates a required field/
+  &:after {
+    content: " *";
+    font-size: 15px;
+    color: #e32;
+    display: inline;
+    position: relative;
+    top: 4px;
+  }
+}
+
+// Custom dropdown arrow for dropdown menues
+
+.dropdown-select {
+    background: url('https://www.dropbox.com/static/images/downarrow_gray-vfldLgMOB.png') no-repeat;
+    background-position: 94% center;
+}
+
+// Remove the yellow background created from form autofill
+
+input:-webkit-autofill {
+    -webkit-box-shadow: 0 0 0 1000px white inset;
+}
+
+label + legend {
+  margin-top: 20px;
+}

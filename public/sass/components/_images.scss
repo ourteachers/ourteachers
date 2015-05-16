@@ -1,0 +1,37 @@
+.full-bleed {
+  display: block;
+  width: 100%;
+  margin-bottom: 1.5rem;
+}
+
+.alignleft {
+  @include breakpoint($medium) {
+    float: left;
+    width: 50%;
+    margin-right: 1.55556rem;
+  }
+}
+
+.alignright {
+  @include breakpoint($medium) {
+    float: right;
+    width: 50%;
+    margin-left: 1.55556rem;
+  }
+}
+
+.alignleft-sm {
+  @include breakpoint($medium) {
+    float: left;
+    width: 35%;
+    margin-right: 1.55556rem;
+  }
+}
+
+.alignright-sm {
+  @include breakpoint($medium) {
+    float: right;
+    width: 35%;
+    margin-left: 1.55556rem;
+  }
+}

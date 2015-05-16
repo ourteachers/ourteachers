@@ -1,0 +1,62 @@
+p {
+  margin-bottom: 1.5em;
+}
+
+a {
+  color: $primary-color;
+  text-decoration: none;
+  &:hover {
+    color: $primary-color;
+  }
+}
+
+
+// Headings
+
+// Headings 1–6, with corresponding Greek-alphabet abstract classes for double-stranded heading hierarchy
+
+// csswizardry.com/2012/02/pragmatic-practical-font-sizing-in-css
+
+
+h1, h2, h3, h4 {
+  color: $heading-color;
+  margin-bottom: 1rem;
+  font-weight: inherit;
+  line-height: 1.2;
+  font-weight: 600;
+}
+
+// High-level base settings.
+$inuit-base-font-size:          16px !default;
+$inuit-base-line-height:        24px !default;
+
+$inuit-heading-size-1:  36px !default;
+$inuit-heading-size-2:  24px !default;
+$inuit-heading-size-3:  20px !default;
+$inuit-heading-size-4:  16px !default;
+$inuit-heading-size-5:  14px !default;
+$inuit-heading-size-6:  12px !default;
+
+h1, .alpha {
+  @include inuit-font-size($inuit-heading-size-1);
+}
+
+h2, .beta {
+  @include inuit-font-size($inuit-heading-size-2);
+}
+
+h3, .gamma {
+  @include inuit-font-size($inuit-heading-size-3);
+}
+
+h4, .delta {
+  @include inuit-font-size($inuit-heading-size-4);
+}
+
+// Misc.
+
+small, .font_small {font-size: 0.8em;}
+
+strong {
+  font-weight: bold;
+}
