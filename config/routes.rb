@@ -1,4 +1,6 @@
 Rails.application.routes.draw do
+  root 'homes#show', via: :get
+
   devise_for :users
   resources :subjects
 
