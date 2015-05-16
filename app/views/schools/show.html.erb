@@ -19,8 +19,8 @@
 <%= link_to 'Add Teacher', school_add_teacher_path %>
 <ul>
 	<% @school.teachers.each do |teacher| %>
+		<li> <%= link_to teacher.name, teacher_path(teacher) %> </li>
 	<% end %>
 </ul>
 
-<%= link_to 'Edit', edit_review_path(@school) %> |
 <%= link_to 'Back', schools_path %>

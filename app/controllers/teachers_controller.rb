@@ -1,5 +1,6 @@
 class TeachersController < ApplicationController
   before_action :set_teacher, only: [:show, :edit, :update, :destroy]
+  before_action :authenticate_user!, only: [:create, :new]
 
   # GET /teachers
   # GET /teachers.json
@@ -60,6 +61,10 @@ class TeachersController < ApplicationController
       format.html { redirect_to teachers_url, notice: 'Teacher was successfully destroyed.' }
       format.json { head :no_content }
     end
+  end
+
+  def add_review
+    redirect_to :controller => 'reviews', action: 'new', teacher_id: Teacher.find(params[:id])
   end
 
   private
