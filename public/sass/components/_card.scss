@@ -1,0 +1,103 @@
+.card {
+	background: $white;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
+	@include breakpoint($medium) {
+		@include span(4 of 8);
+		max-height: 390px;
+	}
+}
+
+.card-content {
+	padding: 20px;
+}
+
+.card-meta {
+	@include clearfix;
+	border-top: 1px solid $line-color;
+	padding-top: 20px;
+	margin-top: 10px;
+}
+
+.card-image {
+	background-size: cover;
+	background-position: center, center;
+	display: block;
+	max-height: 120px;
+	overflow: hidden;
+}
+
+.card-tag {
+	float: right; 
+	color: $light-text;
+}
+
+.card-title {
+	font-size: 14px;
+	margin-top: 0;
+	line-height: 1.5;
+}
+
+.card-description {
+	max-height: 80px;
+	font-size: 14px;
+	// @extend %truncate;
+	// display: -webkit-box;
+	// -webkit-line-clamp: 3;
+	// -webkit-box-orient: vertical;
+
+}
+
+.trunc {
+	font-size: 14px;
+	font-weight: 600;
+	  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.meta-author, .meta-date, .meta-type {
+	font-size: 13px;
+}
+
+.meta-author {
+	font-weight: 600;
+	color: $light-text;
+	font-size: 13px;
+	margin-bottom: 5px;
+}
+
+.meta-content {
+	display: inline-block;
+}
+
+.card__link-overlay {
+  display: block;
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  z-index: 2;
+}
+
+
+.card-main {
+	height: 175px;
+	overflow: hidden;
+}
+
+.card-news {
+	height: 92px;
+	overflow: hidden;
+}
+
+.card-title-z {
+	font-size: 14px;
+	margin-top: 0;
+	line-height: 1.5;
+	padding-bottom: 10px;
+	border-bottom: 1px solid $line-color;
+	margin-bottom: 0;
+}

@@ -1,0 +1,21 @@
+{
+  "name": "sf_theme",
+  "version": "0.0.1",
+  "homepage": "https://github.com/sf-github/sf_orgv2",
+  "authors": [
+    "Evan Dennington <edennington@studentsfirst.org>"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "susy": "~2.2.2",
+    "breakpoint-sass": "~2.5.0"
+  }
+}

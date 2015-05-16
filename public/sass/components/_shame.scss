@@ -1,0 +1,164 @@
+// This currently only applies to the box. Change it up so it can be reused or delete.
+.pad {
+	padding: 2em 3em;
+	text-align: center;
+}
+
+// Look where this is being used and see if you can make it more usable.
+.goldy {
+	padding: 0 60px;
+
+	h3 {
+	color: #242932;
+	font-size: 18px;
+	}
+
+	p {
+		margin-top: 0;
+	}
+
+	.media {
+		margin-bottom: 14px;
+	}
+
+}
+
+
+// Look where this is being used currently. Receipt?
+.unit {
+	max-width: 500px;
+	border-radius: 6px;
+	background: $white;
+	border: 1px solid $line-color;
+	padding: 40px;
+}
+
+.unit-h {
+	background: $snow;
+	padding: 40px;
+	margin: 60px;
+	p:last-child {
+		margin: 0;
+	}
+}
+
+
+// This is all for homepage action items
+
+
+.iconz {
+    padding: 5px 10px;
+    display: inline-block;
+    -moz-border-radius: 100px;
+    -webkit-border-radius: 100px;
+    border-radius: 100px;
+    background: $purple;
+}
+
+.icon {
+	width: 35px;
+	margin-right: 10px;
+}
+
+.icon--main {
+	width: 40px;
+	margin-bottom: 15px;
+}
+
+
+%icon-bg, .icon-bg {
+	width: 30px;
+	box-sizing: content-box;
+	border-radius: 10%;
+	background: #7095B3;
+	padding: 15px;
+	// margin-right: 15px;
+}
+
+.icon-bg--r {
+	@extend %icon-bg;
+	background: #E98283;
+}
+
+.icon-bg--g {
+	@extend %icon-bg;
+	background: #88C9CA;
+}
+
+.icon-bg--b {
+	@extend %icon-bg;
+	background: #9ed0e1;
+}
+
+
+
+
+// Font Awesome Icons 
+
+.fa {
+	margin-right: 5px;
+}
+
+
+
+
+
+
+
+
+.priority {
+	margin-bottom: 10px;
+	@include breakpoint($medium) {
+		@include span(6);
+	}
+}
+
+.btn-search {
+	cursor: pointer;
+	padding: 10px;
+	color: $body-color;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.field-collection-container {
+	margin-bottom: 0;
+	border: none;
+}
+
+
+
+.action__text, .action__button {
+	text-align: center;
+	@include breakpoint($medium) {
+		text-align: initial;
+	}
+	p {
+		margin-bottom: 0;
+	}
+}
+
+.action__text {
+	@include breakpoint($medium) {
+		@include span(6);
+	}
+	h2 {
+		font-weight: 800;
+	}
+}
+
+.action__button {
+	@include breakpoint($medium) {
+		@include span(4);
+		float: right;
+	}
+}

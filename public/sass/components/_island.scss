@@ -1,0 +1,46 @@
+/* Clearfix */
+.island:before,.islet:before,
+.island:after,.islet:after,
+.cf:before,
+.cf:after{
+    content:"";
+    display:table;
+}
+.island:after,.islet:after,
+.cf:after{
+    clear:both;
+}
+.island,.islet,
+.cf{
+    zoom:1;
+}
+
+/* Island object */
+.island,
+.islet{
+    display:block;
+}
+
+.island{
+    padding: 2em;
+    background-color: #FFF;
+    margin-bottom: 20px;
+}
+
+.islet{
+    padding:0.5em;
+}
+
+.island > :last-child,
+.islet > :last-child,{
+    margin-bottom:0;
+}
+
+
+.island-no {
+    padding: 2em;
+}
+
+%island {
+    padding: 2em;
+}

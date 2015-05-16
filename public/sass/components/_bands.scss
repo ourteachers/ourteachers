@@ -1,0 +1,40 @@
+@import 'settings/colors';
+
+$spacing-unit--large: 40px;
+
+%band {
+	padding-top: $spacing-unit--large;
+	padding-bottom: $spacing-unit--large;
+}
+
+.band--light {
+	@extend %band;
+	background-color: $powder;
+}
+
+.band--green {
+	@extend %band;
+	background-color: $green;
+}
+
+.band--dark {
+	@extend %band;
+	background-color: $dark-blue;
+}
+
+
+.band--purple {
+	@extend %band;
+	background-color: $purple;
+}
+
+.band--white {
+	@extend %band;
+	background-color: $white;
+}
+
+.band--border {
+	@extend %band;
+	border-top: 1px solid #E4ECF3;
+	border-bottom: 1px solid #E4ECF3;	
+}

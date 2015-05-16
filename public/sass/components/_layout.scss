@@ -1,0 +1,190 @@
+////////////////////////
+// LAYOUT
+////////////////////////
+
+
+// Import SUSY layout framework:
+// http://susydocs.oddbird.net/en/latest/
+@import "../bower_components/susy/sass/susy";
+
+// Import BREAKPOINT. Sass media-query library.
+// http://breakpoint-sass.com/
+@import "../bower_components/breakpoint-sass/stylesheets/breakpoint";
+
+
+
+//Sass Maps - This is where you define the variables for your grid. You can create new Sass maps
+//and call them with @include layout($susy);
+
+// $susy: (
+//   columns: 12,
+//   gutters: 1/4,
+//   math: fluid, -- can be fluid or static
+//   output: float,
+//   gutter-position: before | after | split | inside | inside-static
+// );
+
+// $shorthand: 12 1/4 fluid float inside;
+
+$susy: (
+	columns: 12,
+	gutters: (1/3),
+	gutter-position: split,
+	global-box-sizing: border-box,
+	output: isolate,
+	container: 1100px,
+	debug: (
+		// image: show-columns,
+		color: rgba(#66f, .25),
+		output: background,
+		toggle: top right,
+	),
+);
+
+
+// Defines the 12 column container
+// .container {
+// 	@include container;
+// 	position: relative;
+// 	width: 100%; 
+// 	margin: 0 auto;
+// 	@include breakpoint($large) {
+// 		width: $large;
+// 	}
+// }
+
+
+.container {
+	@include container;
+}
+
+// Adds padding for smaller screens
+// .container {
+// 	padding: 0 3%;
+// 	@include breakpoint($large) {
+// 		padding: 0;
+// 	}
+// }
+
+.page-wrap {
+	padding-top: 40px;
+	padding-bottom: 80px;
+}
+
+.wrapper {
+	max-width: 700px;
+	margin: 0 auto;
+}
+
+
+.hole {
+	@include clearfix;
+	padding: 20px 0;
+}
+
+.cave {
+	@include clearfix;
+	padding: 40px 0;
+}
+
+.cavern {
+	@include clearfix;
+	padding: 80px 0;
+}
+
+.row {
+	@include clearfix();
+}
+
+
+.main-content {
+	@include breakpoint($medium) {
+		@include span(8);
+	}
+}
+
+
+.sidebar {
+	display: none;
+	@include breakpoint($medium) {
+		display: block;
+		@include span(4);
+	}
+}
+
+
+// It is better to use more semantic classes when creating a layout but these can be used to rapidly prototype. Write about the breakpoint here.
+
+.col-1 {
+	@include breakpoint($medium) {
+	@include span(1);
+	}
+}
+
+.col-2 {
+	@include breakpoint($medium) {
+	@include span(2);
+	}
+}
+
+.col-3 {
+	@include breakpoint($medium) {
+	@include span(3);
+	}
+}
+
+.col-4 {
+	@include breakpoint($medium) {
+	@include span(4);
+	}
+}
+
+.col-5 {
+	@include breakpoint($medium) {
+	@include span(5);
+	}
+}
+
+.col-6 {
+	@include breakpoint($medium) {
+	@include span(6);
+	}
+}
+
+.col-7 {
+	@include breakpoint($medium) {
+	@include span(7);
+	}
+}
+
+.col-8 {
+	@include breakpoint($medium) {
+	@include span(8);
+		padding: 0;
+	}
+}
+
+.col-9 {
+	@include breakpoint($medium) {
+	@include span(9);
+	}
+}
+
+
+.col-10 {
+	@include breakpoint($medium) {
+	@include span(10);
+	}
+}
+
+.col-11 {
+	@include breakpoint($medium) {
+	@include span(11);
+	}
+}
+
+.col-12 {
+	@include breakpoint($medium) {
+	@include span(12);
+	}
+}
