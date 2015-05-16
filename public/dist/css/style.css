@@ -356,10 +356,10 @@ p {
   margin-bottom: 1.5em; }
 
 a {
-  color: #2e9df7;
+  color: #B59BEC;
   text-decoration: none; }
   a:hover {
-    color: #2e9df7; }
+    color: #B59BEC; }
 
 h1, h2, h3, h4 {
   color: #3b444f;
@@ -768,8 +768,7 @@ strong {
 fieldset {
   border: none;
   margin-bottom: 30px;
-  padding: 0;
-  border-top: 1px solid #eff3f6; }
+  padding: 0; }
 
 legend {
   margin-bottom: 20px;
@@ -816,7 +815,7 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   /* stops bg color from leaking outside the border: */ }
 
 input:focus, textarea:focus, select:focus {
-  border: 1px solid #2e9df7; }
+  border: 1px solid #B59BEC; }
 
 input[type="number"] {
   font-weight: 100; }
@@ -877,6 +876,10 @@ input:-webkit-autofill {
 
 label + legend {
   margin-top: 20px; }
+
+textarea {
+  padding: 10px;
+  font-size: 16px; }
 
 .hero--xsm, .hero--sm, .hero--md, .hero--lg {
   position: relative;
