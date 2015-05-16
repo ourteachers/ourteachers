@@ -1,0 +1,11 @@
+<% if user_signed_in? %>
+  Welcome: <b><%= current_user.email %> </b>
+  <%= link_to "Logout", destroy_user_session_path%>
+<% else %>
+  <%= render 'layouts/login' %>
+<% end %>
+<hr>
+<ul>
+	<li><%= link_to "Schools", schools_path %></li>
+</ul>
+<hr>

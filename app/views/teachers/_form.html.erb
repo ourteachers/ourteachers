@@ -10,7 +10,11 @@
       </ul>
     </div>
   <% end %>
-
+  
+  <p>
+    <strong>School:</strong>
+    <%= @teacher.school.name %>
+  </p>
   <div class="field">
     <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
@@ -23,14 +27,7 @@
     <%= f.label :gender %><br>
     <%= f.number_field :gender %>
   </div>
-  <div class="field">
-    <%= f.label :number_of_reviews %><br>
-    <%= f.number_field :number_of_reviews %>
-  </div>
-  <div class="field">
-    <%= f.label :school_id %><br>
-    <%= f.number_field :school_id %>
-  </div>
+  <%= f.hidden_field :school_id, :value => @teacher.school.id%>
   <div class="actions">
     <%= f.submit %>
   </div>

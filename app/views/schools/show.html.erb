@@ -1,4 +1,26 @@
 <p id="notice"><%= notice %></p>
 
-<%= link_to 'Edit', edit_school_path(@school) %> |
+<p>
+  <strong>Name:</strong>
+  <%= @school.name %>
+</p>
+
+<p>
+  <strong>City:</strong>
+  <%= @school.city %>
+</p>
+
+<p>
+  <strong>State:</strong>
+  <%= @school.state %>
+</p>
+
+<h2>Teachers</h2>
+<%= link_to 'Add Teacher', school_add_teacher_path %>
+<ul>
+	<% @school.teachers.each do |teacher| %>
+	<% end %>
+</ul>
+
+<%= link_to 'Edit', edit_review_path(@school) %> |
 <%= link_to 'Back', schools_path %>

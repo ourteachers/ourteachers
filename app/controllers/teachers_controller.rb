@@ -15,6 +15,7 @@ class TeachersController < ApplicationController
   # GET /teachers/new
   def new
     @teacher = Teacher.new
+    @teacher.school = School.find(params[:school_id]) if !School.find(params[:school_id]).nil?
   end
 
   # GET /teachers/1/edit

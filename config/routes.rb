@@ -7,8 +7,11 @@ Rails.application.routes.draw do
   resources :reviews
 
   resources :teachers
-
+  
   resources :schools
+  get "/schools/:id/add_teacher" => "schools#add_teacher", as: "school_add_teacher"
+
+  # resources :schools, only: [:index, :show]
 
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".

@@ -61,6 +61,10 @@ class SchoolsController < ApplicationController
     end
   end
 
+  def add_teacher
+    redirect_to :controller => 'teachers', action: 'new', school_id: School.find(params[:id])
+  end
+
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_school
@@ -69,6 +73,7 @@ class SchoolsController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def school_params
-      params[:school]
+      params.require(:school).permit(:state, :name, :city)
+
     end
 end
