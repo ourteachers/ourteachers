@@ -1,4 +1,11 @@
 Rails.application.routes.draw do
+  devise_for :users
+  resources :subjects
+
+  resources :reviews
+
+  resources :teachers
+
   resources :schools
 
   # The priority is based upon order of creation: first created -> highest priority.

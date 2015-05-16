@@ -1,0 +1,15 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  first_name: MyString
+  last_name: MyString
+  gender: 1
+  number_of_reviews: 1
+  school_id: 1
+
+two:
+  first_name: MyString
+  last_name: MyString
+  gender: 1
+  number_of_reviews: 1
+  school_id: 1
