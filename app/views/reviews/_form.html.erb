@@ -1,38 +1,89 @@
-<%= form_for(@review) do |f| %>
-  <% if @review.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@review.errors.count, "error") %> prohibited this review from being saved:</h2>
 
-      <ul>
-      <% @review.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
-    </div>
-  <% end %>
-  
-  <p>
-    <strong>Teacher:</strong>
-    <%= @review.teacher.name %>
-  </p>
-  <%= f.hidden_field :teacher_id, :value => @review.teacher.id %>
-  <div class="field">
-    <%= f.label :child_happiness %><br>
-    <%= f.number_field :child_happiness %>
+<div class="container">
+
+
+
+<div class="wrapper">
+
+
+<div class="review__section">
+
+  <div class="rating">
+
+<%= form_for(@review) do |f| %>
+<%= f.hidden_field :teacher_id, :value => @review.teacher.id %>
+  <div class="rating__container">
+    <h2 class="rating__header">How would you rate your child's happiness?</h2>
+    <form action="">
+      <input type="radio" name="#" value="#">1
+      <input type="radio" name="#" value="#">2
+      <input type="radio" name="#" value="#">3
+      <input type="radio" name="#" value="#">4
+      <input type="radio" name="#" value="#">5
+    </form>
   </div>
-  <div class="field">
-    <%= f.label :child_learning %><br>
-    <%= f.number_field :child_learning %>
+  <%= f.hidden_field :child_happiness %>
+
+
+  <div class="rating__container">
+    <h2 class="rating__header">How would you rate their learning?</h2>
+    <form action="">
+      <input type="radio" name="#" value="#">1
+      <input type="radio" name="#" value="#">2
+      <input type="radio" name="#" value="#">3
+      <input type="radio" name="#" value="#">4
+      <input type="radio" name="#" value="#">5
+    </form>
   </div>
-  <div class="field">
-    <%= f.label :communication %><br>
-    <%= f.number_field :communication %>
+  <%= f.hidden_field :child_learning %>
+
+  <div class="rating__container">
+    <h2 class="rating__header">How is their communication?</h2>
+    <form action="">
+      <input type="radio" name="#" value="#">1
+      <input type="radio" name="#" value="#">2
+      <input type="radio" name="#" value="#">3
+      <input type="radio" name="#" value="#">4
+      <input type="radio" name="#" value="#">5
+    </form>        
   </div>
-  <div class="field">
-    <%= f.label :comments %><br>
-    <%= f.text_area :comments %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
+<%= f.hidden_field :communication %>
+</div>
+
+<div class="rating__container">
+  <h2>Select up to 3 tags that describe your child's teacher</h2>
+  <span class="tag">Enthusiastic</span>
+  <span class="tag tag--active">Awesome</span>
+  <span class="tag">Thoughtful</span>
+  <span class="tag">Encouraging</span>
+  <span class="tag">Enthusiastic</span>
+  <span class="tag">Funny</span>
+  <span class="tag">Loving</span>
+  <span class="tag tag--active">Strict</span>
+  <span class="tag">Passionate</span>
+  <span class="tag tag--active">Loud</span>
+  <span class="tag">Dreamy</span>
+  <span class="tag">Hot Hot Hot</span>
+</div>
+
+  <form action="" method="post" id="#" class="#">
+
+    <fieldset>
+      <h2>Write a comment about your teacher</h2>
+      <%= f.text_area :comments, rows: 8, class: "form-control" %>
+      <!-- <textarea rows="8" id="comment" name="comment" required></textarea> -->
+    </fieldset>
+    
+    <%= f.button "Submit", class: "btn--primary large" %>
+  </form>
+
   </div>
 <% end %>
+
+
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+
+  </script>
