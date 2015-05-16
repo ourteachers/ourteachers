@@ -10,7 +10,12 @@
       </ul>
     </div>
   <% end %>
-
+  
+  <p>
+    <strong>Teacher:</strong>
+    <%= @review.teacher.name %>
+  </p>
+  <%= f.hidden_field :teacher_id, :value => @review.teacher.id %>
   <div class="field">
     <%= f.label :child_happiness %><br>
     <%= f.number_field :child_happiness %>

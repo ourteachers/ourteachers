@@ -1,29 +1,21 @@
 <p id="notice"><%= notice %></p>
+<h1>
+  <%= @teacher.name %>
+</h1>
+  <p>
+    <%= (link_to @teacher.school.name, school_path(@teacher.school)) + " | #{@teacher.reviews.count} Reviews" %> | <%= link_to 'Edit', edit_teacher_path(@teacher) %>
+  </p>
 
+<h3>Reviews</h3>
 <p>
-  <strong>First name:</strong>
-  <%= @teacher.first_name %>
+	<%= link_to 'Create Review', teacher_add_review_path %>
 </p>
+<ul>
+  <% @teacher.reviews.each do |review| %>
+  	<% @review = review %>
+		<li><%= render 'reviews/review_line' %></li>
+  <% end %>
+</ul>
 
-<p>
-  <strong>Last name:</strong>
-  <%= @teacher.last_name %>
-</p>
 
-<p>
-  <strong>Gender:</strong>
-  <%= @teacher.gender %>
-</p>
 
-<p>
-  <strong>Number of reviews:</strong>
-  <%= @teacher.number_of_reviews %>
-</p>
-
-<p>
-  <strong>School:</strong>
-  <%= @teacher.school_id %>
-</p>
-
-<%= link_to 'Edit', edit_teacher_path(@teacher) %> |
-<%= link_to 'Back', teachers_path %>

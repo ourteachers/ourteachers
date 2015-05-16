@@ -15,6 +15,7 @@
     <strong>School:</strong>
     <%= @teacher.school.name %>
   </p>
+  <%= f.hidden_field :school_id, :value => @teacher.school.id%>
   <div class="field">
     <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
@@ -27,7 +28,6 @@
     <%= f.label :gender %><br>
     <%= f.number_field :gender %>
   </div>
-  <%= f.hidden_field :school_id, :value => @teacher.school.id%>
   <div class="actions">
     <%= f.submit %>
   </div>

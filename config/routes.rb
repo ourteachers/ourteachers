@@ -1,13 +1,16 @@
 Rails.application.routes.draw do
+  resources :qualities
+
   root 'homes#show', via: :get
 
   devise_for :users
   resources :subjects
 
-  resources :reviews
+  resources :reviews, only: [:create, :destroy, :new]
 
-  resources :teachers
-  
+  resources :teachers, only: [:show, :edit, :new, :destroy, :create]
+  get "/teachers/:id/add_review" => "teachers#add_review", as: "teacher_add_review"
+
   resources :schools
   get "/schools/:id/add_teacher" => "schools#add_teacher", as: "school_add_teacher"
 

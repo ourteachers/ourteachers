@@ -11,7 +11,27 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150516194549) do
+ActiveRecord::Schema.define(version: 20150516230541) do
+
+  create_table "characterics", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "qualities", force: true do |t|
+    t.string   "name"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
+  create_table "qualities_teachers", id: false, force: true do |t|
+    t.integer "quality_id", null: false
+    t.integer "teacher_id", null: false
+  end
+
+  add_index "qualities_teachers", ["quality_id", "teacher_id"], name: "index_subjects_teachers_on_quality_id_and_teacher_id"
+  add_index "qualities_teachers", ["teacher_id", "quality_id"], name: "index_subjects_teachers_on_teacher_id_and_quality_id"
 
   create_table "reviews", force: true do |t|
     t.integer  "child_happiness"
@@ -39,12 +59,12 @@ ActiveRecord::Schema.define(version: 20150516194549) do
   end
 
   create_table "subjects_teachers", id: false, force: true do |t|
-    t.integer "teacher_id"
-    t.integer "subject_id"
+    t.integer "teacher_id", null: false
+    t.integer "subject_id", null: false
   end
 
-  add_index "subjects_teachers", ["subject_id"], name: "index_subjects_teachers_on_subject_id"
-  add_index "subjects_teachers", ["teacher_id"], name: "index_subjects_teachers_on_teacher_id"
+  add_index "subjects_teachers", ["subject_id", "teacher_id"], name: "index_subjects_teachers_on_subject_id_and_teacher_id"
+  add_index "subjects_teachers", ["teacher_id", "subject_id"], name: "index_subjects_teachers_on_teacher_id_and_subject_id"
 
   create_table "teachers", force: true do |t|
     t.string   "first_name"
