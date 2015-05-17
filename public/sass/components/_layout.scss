@@ -76,6 +76,11 @@ $susy: (
 	margin: 0 auto;
 }
 
+.wrapper-sm {
+	max-width: 550px;
+	margin: 0 auto;
+}
+
 
 .hole {
 	@include clearfix;
