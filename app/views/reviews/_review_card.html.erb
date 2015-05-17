@@ -1,7 +1,11 @@
 <div class="comment cf">
-
-  <div class="comment__quote"><b>Comments: </b><%= @review.comments %> </div>
-
+   <div class="comment__quote"><%= @review.comments %>
+     <div class="comment__tags">
+      <% @review.qualities.each do |quality| %>
+        <span class="tag x-sm"> <%= quality.name %> </span>
+      <% end %>
+    </div>
+  </div>
   <div class="comment_rating-collection">
 
     <div class="review-rating">
