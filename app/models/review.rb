@@ -5,6 +5,6 @@ class Review < ActiveRecord::Base
 	has_many :qualities, through: :qualities_reviews
 
 	def average_score
-		((child_happiness.to_i + child_learning.to_i + communication.to_i) / 3)
+		((child_happiness.to_f + child_learning.to_f + communication.to_f) / 3.00)
 	end
 end

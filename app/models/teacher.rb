@@ -20,7 +20,7 @@ class Teacher < ActiveRecord::Base
 			total_score += review.average_score
 		end
 		if review_count > 0
-			total_score / review_count
+			(total_score / review_count).round(1)
 		else
 			"?"
 		end

@@ -81,9 +81,9 @@ ready = function() {
 
   });
 
-
+  if($("div#map-canvas")) {
     var request = {
-      placeId: 'ChIJ5WpT_a0Ym4AR03N8iKvK7ZQ'
+      placeId: $("div#map-canvas").data('place-id')
     };
     
     mapOptions = {};
@@ -105,6 +105,7 @@ ready = function() {
                                   mapOptions);
      $("div.profile_photo").remove();
     });
+  }
 
 
 }
