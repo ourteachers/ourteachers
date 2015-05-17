@@ -1721,6 +1721,7 @@ nav ul li {
   padding-bottom: 10px; }
 
 .teacher__avatar {
+  width: 18.75%;
   float: left;
   margin-left: 3.125%;
   margin-right: 3.125%; }

@@ -79,7 +79,7 @@
         <div class="col-12">
 
             <div class="teacher__meta-grouping">
-            <h4>Location</h4>
+            <div class="heading">Location</div>
             <div>Yuba City Unified School District</div>
             <div>850 Clark Ave, Yuba City, CA 95991</div>
             </div>
