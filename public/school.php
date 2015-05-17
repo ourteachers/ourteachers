@@ -16,28 +16,70 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
-<?php include('./templates/_header.php'); ?>
+    <?php include('./templates/_header.php'); ?>
 
 
       <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12379.963692770394!2d-121.623616!3d39.129438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a80a48e786570c8!2sYuba+City+High+School!5e0!3m2!1sen!2sus!4v1431827017740" width="100%" height="200" frameborder="0" style="border:0"></iframe>
 
 
-<div class="band--white">
-        <div class="container">
-        <h2>Yuba City High School</h2>
-        <p>Address: 850 Clark Ave, Yuba City, CA 95991</p>
-                    <div class="numberCircle" style="background: #F65758;">1</div>
-           <div style="font-size: 12px; font-style: italic; float:right;">4 Reviews</div>
-        </div>
-</div>
+    <div class="band--white">
 
+      <div class="container">
+
+
+      <div class="school-info">
+        <h2>Yuba City High School</h2>
+        <span>850 Clark Ave, Yuba City, CA 95991</span>
+      </div>
+
+    <div class="col-1">
+      <span>SCORE</span>
+      <div class="score--main green">5</div>
+    </div>
+
+    <div class="col-2">
+
+      <span class="title">Child Happiness</span>
+      <div class="progress-bar blue stripes">
+          <span class="yellow" style="width: 60%"></span>
+      </div>
+
+      <span class="title">Child Happiness</span>
+      <div class="progress-bar blue stripes">
+          <span class="green" style="width: 100%"></span>
+      </div>
+
+      <span class="title">Communication</span>
+      <div class="progress-bar blue stripes">
+          <span class="green" style="width: 90%"></span>
+      </div>
+
+    </div>
+
+      <div class="f--r">
+        <a class="btn--secondary large" style="margin-top:15px;">Add a Teacher</a>
+      </div>
+
+      </div>
+    </div>
 
     <body>
 
 
       <div class="container page-wrap">
 
-      <div class="island col-4">
+
+
+    <div class="col-6 m--b">
+      <p>"Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo." - Jane Doe</p>
+    </div>
+
+     <div class="col-6 m--b">
+      <p>Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo.</p>
+    </div>
+   
+
+      <div class="teacher-card">
         <div class="media">
 
           <div class="mediaImg">
@@ -48,13 +90,13 @@
             <div><b>Evan Dennington</b></div>
             <div>English</div>
           </div>
-            <div class="numberCircle">5</div>
-           <div style="font-size: 12px; font-style: italic; float:right;">24 Reviews</div>
+            <div class="score green">5</div>
+           <div class="review-count">24 Reviews</div>
         </div> 
 
       </div>
 
-      <div class="island col-4">
+      <div class="teacher-card">
         <div class="media">
 
           <div class="mediaImg">
@@ -65,12 +107,12 @@
             <div><b>Marry Smith</b></div>
             <div>Math</div>
           </div>
-            <div class="numberCircle" style="background: #F65758;">1</div>
-           <div style="font-size: 12px; font-style: italic; float:right;">4 Reviews</div>
-        </div> 
-
+            <div class="score null">?</div>
+           <div class="review-count">1 Reviews</div>
+        </div>
       </div>
-      <div class="island col-4">
+
+      <div class="teacher-card">
         <div class="media">
 
           <div class="mediaImg">
@@ -81,13 +123,12 @@
             <div><b>Kitty Kat</b></div>
             <div>Physics</div>
           </div>
-            <div class="numberCircle" style="background: #FEC300;">3</div>
-           <div style="font-size: 12px; font-style: italic; float:right;">564 Reviews</div>
-        </div> 
-
+            <div class="score yellow">3</div>
+           <div class="review-count">564 Reviews</div>
+        </div>
       </div>
 
-            <div class="island col-4">
+            <div class="teacher-card">
         <div class="media">
 
           <div class="mediaImg">
@@ -98,13 +139,13 @@
             <div><b>Evan Dennington</b></div>
             <div>English</div>
           </div>
-            <div class="numberCircle">5</div>
-           <div style="font-size: 12px; font-style: italic; float:right;">24 Reviews</div>
+            <div class="score green">5</div>
+           <div class="review-count">24 Reviews</div>
         </div> 
 
       </div>
 
-      <div class="island col-4">
+      <div class="teacher-card">
         <div class="media">
 
           <div class="mediaImg">
@@ -115,12 +156,12 @@
             <div><b>Marry Smith</b></div>
             <div>Math</div>
           </div>
-            <div class="numberCircle" style="background: #F65758;">1</div>
-           <div style="font-size: 12px; font-style: italic; float:right;">4 Reviews</div>
+            <div class="score red">1</div>
+           <div class="review-count">4 Reviews</div>
         </div> 
 
       </div>
-      <div class="island col-4">
+      <div class="teacher-card">
         <div class="media">
 
           <div class="mediaImg">
@@ -131,12 +172,11 @@
             <div><b>Kitty Kat</b></div>
             <div>Physics</div>
           </div>
-            <div class="numberCircle" style="background: #FEC300;">3</div>
-           <div style="font-size: 12px; font-style: italic; float:right;">564 Reviews</div>
+            <div class="score yellow">3</div>
+           <div class="review-count">564 Reviews</div>
         </div> 
 
       </div>
-
 
    
 

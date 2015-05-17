@@ -49,10 +49,10 @@
 .btn--secondary {
 	@extend %btn;
 	color: $light-text;
-	border: 1px solid $border-color;
+	background: $mist;
 	&:hover {
-		color: darken($light-text, 10%);
-		border: 1px solid darken($border-color, 10%);
+		background: darken($mist, 10%);
+		color: #FFF;
 	}
 }
 
@@ -70,3 +70,9 @@
 	font-weight: 800;
 }
 
+
+.x-large {
+	padding: 15px 40px;
+	font-size: 14px;
+	font-weight: 800;
+}
