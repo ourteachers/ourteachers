@@ -621,7 +621,7 @@ strong {
     margin-left: 1.04167%;
     margin-right: 1.04167%; } }
 
-.tag, .btn--primary, .btn--secondary, .btn {
+.tag, .btn--primary, .btn--transparent, .btn--secondary, .btn {
   padding: 10px 30px;
   border-radius: 2px;
   background-clip: padding-box;
@@ -633,7 +633,7 @@ strong {
   font-weight: 600;
   letter-spacing: .0125em;
   transition: all 0.2s ease-in-out; }
-  .tag:link, .btn--primary:link, .btn--secondary:link, .tag:visited, .btn--primary:visited, .btn--secondary:visited, .btn:link, .btn:visited {
+  .tag:link, .btn--primary:link, .btn--transparent:link, .btn--secondary:link, .tag:visited, .btn--primary:visited, .btn--transparent:visited, .btn--secondary:visited, .btn:link, .btn:visited {
     text-decoration: none; }
 
 .tag {
@@ -650,6 +650,13 @@ strong {
   background: #B59BEC;
   color: #FFFFFF; }
   .btn--primary:hover {
+    color: #FFFFFF;
+    background: #9570e4; }
+
+.btn--transparent {
+  background: transparent;
+  color: #FFFFFF; }
+  .btn--transparent:hover {
     color: #FFFFFF;
     background: #9570e4; }
 
@@ -887,14 +894,14 @@ textarea {
   padding: 10px;
   font-size: 16px; }
 
-.hero--xsm, .hero--sm, .hero--md, .hero--lg {
+.hero--xsm, .hero--sm, .hero--md, .hero--lg, .hero--xlg {
   position: relative;
   color: #FFFFFF; }
-  .hero--xsm h1, .hero--sm h1, .hero--md h1, .hero--lg h1, .hero--xsm h2, .hero--sm h2, .hero--md h2, .hero--lg h2, .hero--xsm h3, .hero--sm h3, .hero--md h3, .hero--lg h3, .hero--xsm h4, .hero--sm h4, .hero--md h4, .hero--lg h4 {
+  .hero--xsm h1, .hero--sm h1, .hero--md h1, .hero--lg h1, .hero--xlg h1, .hero--xsm h2, .hero--sm h2, .hero--md h2, .hero--lg h2, .hero--xlg h2, .hero--xsm h3, .hero--sm h3, .hero--md h3, .hero--lg h3, .hero--xlg h3, .hero--xsm h4, .hero--sm h4, .hero--md h4, .hero--lg h4, .hero--xlg h4 {
     color: #FFFFFF; }
-  .hero--xsm a, .hero--sm a, .hero--md a, .hero--lg a {
+  .hero--xsm a, .hero--sm a, .hero--md a, .hero--lg a, .hero--xlg a {
     color: inherit; }
-  .hero--xsm h2, .hero--sm h2, .hero--md h2, .hero--lg h2 {
+  .hero--xsm h2, .hero--sm h2, .hero--md h2, .hero--lg h2, .hero--xlg h2 {
     line-height: 1.5; }
 
 .hero--xsm {
@@ -908,6 +915,9 @@ textarea {
 
 .hero--lg {
   height: 500px; }
+
+.hero--xlg {
+  height: 600px; }
 
 .hero__container {
   display: block;
@@ -1636,6 +1646,16 @@ nav ul li {
 .map {
   width: 100%;
   height: 200px; }
+
+.hero__title {
+  font-weight: 400;
+  font-size: 38px; }
+
+.header-transparent {
+  background: transparent;
+  position: fixed;
+  z-index: 3;
+  width: 100%; }
 
 .clear {
   *zoom: 1; }

@@ -46,6 +46,17 @@
 	}
 }
 
+.btn--transparent {
+	@extend %btn;
+	background: transparent;
+	color: $white;
+	&:hover {
+		color: $white;
+		background: darken($purple, 10%);
+	}
+}
+
+
 .btn--secondary {
 	@extend %btn;
 	color: $light-text;

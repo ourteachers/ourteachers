@@ -31,6 +31,10 @@
   height: 500px;
 }
 
+.hero--xlg {
+  @extend %hero;
+  height: 600px;
+}
 
 .hero__container {
   display: block;
