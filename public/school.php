@@ -81,7 +81,7 @@
     </div>
    
 
-    
+   
       <a href="#" class="teacher-card">
         <div class="media">
 
@@ -96,7 +96,7 @@
             <div class="score green">5</div>
            <div class="review-count">24 Reviews</div>
         </div>
-      </a>
+    </a>
     
       <div class="teacher-card">
         <div class="media">

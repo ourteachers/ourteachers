@@ -1368,7 +1368,7 @@ nav ul li {
 
 .site-logo {
   padding: 15px 0px;
-  width: 140px;
+  width: 160px;
   float: left; }
 
 .site-logo-state {
@@ -1649,9 +1649,12 @@ nav ul li {
   padding: 1.25em;
   background-color: #FFF;
   margin-bottom: 20px;
-  border-radius: 4px; }
-  .teacher-card a {
-    color: #59626a; }
+  border-radius: 4px;
+  color: inherit;
+  transition: all 0.2s ease; }
+  .teacher-card:hover {
+    color: inherit;
+    background: #eff3f6; }
 
 .teacher-card--link a {
   color: #59626a !important; }
@@ -1682,7 +1685,7 @@ nav ul li {
 
 .hero__title {
   font-weight: 400;
-  font-size: 38px; }
+  font-size: 34px; }
 
 .header-transparent {
   background: transparent;

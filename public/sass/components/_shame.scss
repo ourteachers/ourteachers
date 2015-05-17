@@ -244,8 +244,11 @@
     background-color: #FFF;
     margin-bottom: 20px;
     border-radius: 4px;
-	a {
-		color: $body-color;
+	color: inherit;
+	transition: all 0.2s ease;
+	&:hover {
+		color: inherit;
+		background: $powder;
 	}
 }
 
@@ -283,7 +286,7 @@
 
 .hero__title {
 	font-weight: 400;
-	font-size: 38px;
+	font-size: 34px;
 }
 
 .header-transparent {
