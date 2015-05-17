@@ -177,6 +177,19 @@
     text-align: center;
 }
 
+.score--small {
+    border-radius: 10%;
+    width: 25px;
+    height: 25px;
+    padding: 2px;
+    font-size: 14px;
+    color: #FFF;
+    font-weight: 800;
+    text-align: center;
+    display:inline-block;
+    margin-right: 10px;
+}
+
 .score--main {
     border-radius: 10%;
     width: 60px;
@@ -290,4 +303,54 @@
     padding: 2.25em;
     background-color: #FFF;
     margin-bottom: 20px;
+}
+
+.rating-collection {
+
+}
+
+.review-rating {
+	display:block;
+	margin-bottom: 5px;
+}
+
+.comment {
+	font-size: .9em;
+	background-color: $white;
+	padding: 20px;
+	margin-bottom: 20px;
+}
+
+
+.comment__quote {
+	@include span(5 of 8);
+
+}
+
+.comment_rating-collection {
+	@include span(3 of 8);
+}
+
+.parent-reviews {
+	border-bottom: 1px solid $border-color;
+	padding-bottom: 10px;
+}
+
+.teacher__avatar {
+	@include span( of 4);
+}
+
+.teacher__meta {
+	@include span(3 of 4);
+}
+
+.heading {
+	font-weight: 600;
+	margin-bottom: 5px;
+}
+
+.teacher__meta-grouping {
+	margin-bottom: 10px;
+	border-bottom: 1px solid #eee;
+	padding-bottom: 10px;
 }
