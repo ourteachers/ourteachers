@@ -44,12 +44,12 @@
 
         <div class="col-9 m--b">
 
-          <span class="title">Child Happiness</span>
+          <span class="title">Student Happiness</span>
           <div class="progress-bar blue stripes">
               <span class="yellow" style="width: 60%"></span>
           </div>
 
-          <span class="title">Child Engament</span>
+          <span class="title">Student Enagement</span>
           <div class="progress-bar blue stripes">
               <span class="green" style="width: 100%"></span>
           </div>
@@ -131,11 +131,11 @@
             <div class="comment_rating-collection">
 
               <div class="review-rating">
-                <div class="score--small red">1</div><span>Child Learning</span>
+                <div class="score--small red">1</div><span>Student Learning</span>
               </div>
 
               <div class="review-rating">
-                <div class="score--small green">5</div><span>Child Engagement</span> 
+                <div class="score--small green">5</div><span>Student Engagement</span> 
               </div>
 
               <div class="review-rating">
@@ -155,11 +155,11 @@
             <div class="comment_rating-collection">
 
               <div class="review-rating">
-                <div class="score--small red">1</div><span>Child Learning</span>
+                <div class="score--small red">1</div><span>Student Learning</span>
               </div>
 
               <div class="review-rating">
-                <div class="score--small green">5</div><span>Child Engagement</span> 
+                <div class="score--small green">5</div><span>Student Engagement</span> 
               </div>
 
               <div class="review-rating">
