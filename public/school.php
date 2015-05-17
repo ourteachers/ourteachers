@@ -26,25 +26,25 @@
 
       <div class="container">
 
-
+    
       <div class="school-info">
         <h2>Yuba City High School</h2>
         <span>850 Clark Ave, Yuba City, CA 95991</span>
       </div>
 
     <div class="col-1">
-      <span>SCORE</span>
+      <span style="font-weight:800;letter-spacing:1px;">SCORE</span>
       <div class="score--main green">5</div>
     </div>
 
-    <div class="col-2">
+    <div class="col-3">
 
-      <span class="title">Child Happiness</span>
+      <span class="title">Happiness</span>
       <div class="progress-bar blue stripes">
           <span class="yellow" style="width: 60%"></span>
       </div>
 
-      <span class="title">Child Happiness</span>
+      <span class="title">Learning</span>
       <div class="progress-bar blue stripes">
           <span class="green" style="width: 100%"></span>
       </div>
@@ -57,7 +57,7 @@
     </div>
 
       <div class="f--r">
-        <a href="#" class="btn--secondary large" style="margin-top:15px;">Add a Teacher</a>
+        <a href="#" class="btn--secondary x-large" style="margin-top:15px;">Add a Teacher</a>
       </div>
 
       </div>
