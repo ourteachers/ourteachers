@@ -9,7 +9,8 @@
     <nav class="main-nav nav">
       <ul id="menu">
         <li>
-          <input style="width:500px;" placeholder="Search for a teacher or school" type="email" id="email" name="email" required>
+          <input id="pac-input" class="controls" type="text" placeholder="Search Box">
+          <input style="width:500px;" placeholder="Search for a teacher or school" id="main_search" name="main_search" required>
         </li>        
       </ul>
     </nav>

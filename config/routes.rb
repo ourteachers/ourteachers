@@ -14,6 +14,8 @@ Rails.application.routes.draw do
   resources :schools
   get "/schools/:id/add_teacher" => "schools#add_teacher", as: "school_add_teacher"
 
+  post "/schools/init" => "schools#init_school", as: "init_school"
+
   # resources :schools, only: [:index, :show]
 
   # The priority is based upon order of creation: first created -> highest priority.

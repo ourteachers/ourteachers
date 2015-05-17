@@ -51,6 +51,15 @@ class SchoolsController < ApplicationController
     end
   end
 
+  def init_school
+    @school = School.find_or_create_by(google_reference: params["google_reference"])
+    @school.name = params["name"]
+    @school.place_id = params["place_id"]
+    @school.address = params["address"]
+    @school.save
+    render :json => @school.to_json
+  end
+
   # DELETE /schools/1
   # DELETE /schools/1.json
   def destroy
