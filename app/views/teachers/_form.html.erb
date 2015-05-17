@@ -22,7 +22,9 @@
     </div>
 
            
-
+    <fieldset>
+        <%= f.text_area :bio, rows: 6, class: "form-control", placeholder: "Biography" %>
+    </fieldset>
       <%= f.submit "Submit", class: "btn--primary large", style: "width:100%; height: 40px;" %>
   <% end %>
 
