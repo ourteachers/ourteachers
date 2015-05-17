@@ -16,7 +16,7 @@
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
     </head>
 
-<?php include('./templates/_header.php'); ?>
+    <?php include('./templates/_header.php'); ?>
 
     <body>
 
