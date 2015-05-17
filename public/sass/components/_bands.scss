@@ -29,7 +29,7 @@ $spacing-unit--large: 40px;
 }
 
 .band--white {
-	@extend %band;
+	padding: 20px 0;
 	background-color: $white;
 }
 

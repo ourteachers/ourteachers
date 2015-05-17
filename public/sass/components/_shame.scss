@@ -164,6 +164,50 @@
 }
 
 
+.score {
+    border-radius: 10%;
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    font-size: 20px;
+    margin-top: -45px;
+    float: right;
+    color: #FFF;
+    font-weight: 800;
+    text-align: center;
+}
+
+.score--main {
+    border-radius: 10%;
+    width: 60px;
+    height: 60px;
+    padding: 8px;
+    font-size: 30px;
+    color: #FFF;
+    font-weight: 800;
+    text-align: center;
+
+    // font: 32px Arial, sans-serif;
+}
+
+
+.purple { background: $purple;}
+
+.green { background: $green; }
+
+.red { background: $red; }
+
+.yellow { background: $yellow; }
+
+.null { background: #eee; }
+
+.review-count {
+	font-size: 12px;
+	font-style: italic;
+	float:right;
+}
+
+
 .numberCircle {
     border-radius: 10%;
 
@@ -173,11 +217,47 @@
     font-size: 20px;
     margin-top: -45px;
     float: right;
-
     background: $green;
     color: #FFF;
     font-weight: 800;
     text-align: center;
 
     // font: 32px Arial, sans-serif;
+}
+
+.teacher-card {
+	@include span(4);
+    padding: 1.25em;
+    background-color: #FFF;
+    margin-bottom: 20px;
+    border-radius: 4px;
+	a {
+		color: $body-color;
+	}
+}
+
+.teacher-card--link a {
+	color: $body-color !important;
+}
+
+.progress-bar {
+    background-color: #eee;
+    height: 5px;
+    width: 100%;
+}
+
+.progress-bar span {
+    display: block;
+    height: 100%;
+    transition: width .4s ease-in-out;    
+}
+
+.title {
+	font-size: 13px;
+}
+
+
+.school-info {
+	@include span(4);
+	margin-top: 15px;
 }
