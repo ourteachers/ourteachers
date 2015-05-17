@@ -1752,6 +1752,9 @@ nav ul li {
 .breadcrumb {
   margin-top: 15px; }
 
+.review-icon {
+  font-size: 30px; }
+
 .clear {
   *zoom: 1; }
   .clear:before, .clear:after {
