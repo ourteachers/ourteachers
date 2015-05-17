@@ -17,7 +17,9 @@
   <%= csrf_meta_tags %>
 </head>
 
-<%= render 'layouts/header' %>
+<% if !(@hide_frame == 1) %>
+	<%= render 'layouts/header' %>
+<% end %>
 
 <body>
 

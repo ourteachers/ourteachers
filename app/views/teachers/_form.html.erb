@@ -6,11 +6,11 @@
     <h1 class="m--b center">Add Teacher</h1>
     <%= f.hidden_field :school_id, :value => @teacher.school.id%>
     
-    <div class="input-grouping" style="padding-bottom: 10px;">
+    <div class="input-grouping cf" style="padding-bottom: 10px;">
       <div class="mediaImg">         
          <img class="avatar" src=<%= @teacher.avatar %> >
       </div> 
-      <%= f.file_field :avatar, size: 40%>
+      <%= f.file_field :avatar, size: 40, style: "margin: 15px;"%>
     </div>
 
     <div class="input-grouping">
