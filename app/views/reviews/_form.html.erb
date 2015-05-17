@@ -16,7 +16,7 @@
                     <div class="rating__container">
                         <h2 class="rating__header">How would you rate your
                         child's happiness?</h2>
-                        <div class="review-icon-group">
+                        <div class="review-icon-group" data-review-field="review_child_happiness">
                             <span class="review-icon" data-review-value="1"><i class="fa fa-star"></i></span>
                             <span class="review-icon" data-review-value="2"><i class="fa fa-star"></i></span>
                             <span class="review-icon" data-review-value="3"><i class="fa fa-star"></i></span>
@@ -32,11 +32,14 @@
                         learning?</h2>
 
 
-                          <input name="#" type="radio" value="#">1
-                          <input name="#" type="radio" value="#">2
-                          <input name="#" type="radio" value="#">3
-                          <input name="#" type="radio" value="#">4
-                          <input name="#" type="radio" value="#">5
+                        <div class="review-icon-group" data-review-field="review_child_learning">
+                            <span class="review-icon" data-review-value="1"><i class="fa fa-star"></i></span>
+                            <span class="review-icon" data-review-value="2"><i class="fa fa-star"></i></span>
+                            <span class="review-icon" data-review-value="3"><i class="fa fa-star"></i></span>
+                            <span class="review-icon" data-review-value="4"><i class="fa fa-star"></i></span>
+                            <span class="review-icon" data-review-value="5"><i class="fa fa-star"></i></span>                            
+                        </div>
+
 
                           <%= f.hidden_field :child_learning %>
                     </div>
@@ -44,11 +47,14 @@
                     <div class="rating__container">
                         <h2 class="rating__header">How is their
                         communication?</h2>
-                            <input name="#" type="radio" value="#">1
-                            <input name="#" type="radio" value="#">2
-                            <input name="#" type="radio" value="#">3
-                            <input name="#" type="radio" value="#">4
-                            <input name="#" type="radio" value="#">5
+                        <div class="review-icon-group" data-review-field="review_communication">
+                            <span class="review-icon" data-review-value="1"><i class="fa fa-star"></i></span>
+                            <span class="review-icon" data-review-value="2"><i class="fa fa-star"></i></span>
+                            <span class="review-icon" data-review-value="3"><i class="fa fa-star"></i></span>
+                            <span class="review-icon" data-review-value="4"><i class="fa fa-star"></i></span>
+                            <span class="review-icon" data-review-value="5"><i class="fa fa-star"></i></span>                            
+                        </div>
+
                           <%= f.hidden_field :communication %>
                     </div>
                 </div>

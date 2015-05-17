@@ -17,6 +17,10 @@
 
 init_review_field = function () {
   $(this).children("span").each(function(){
+    var defaultColor = "#dbe6ec";
+    var hoverColor = "#FEC300";
+    var selectedColor = "#FEC300";
+
     function setReviewColors(context, color)
     {
       val = $(context).data("review-value");
@@ -36,14 +40,14 @@ init_review_field = function () {
         return $(this).data("review-value") <= val;
       });
       spans.each(function(){
-        $(this).css("color", "red");
+        $(this).css("color", hoverColor);
       });
 
       spans = $(this).parent().children("span").filter(function(i){
         return $(this).data("review-value") > val;
       });
       spans.each(function(){
-        $(this).css("color", "black");
+        $(this).css("color", defaultColor);
       });
 
     });
@@ -55,9 +59,9 @@ init_review_field = function () {
 
       spans.each(function(){
         if($(this).hasClass("selected")){
-          $(this).css("color", "orange");
+          $(this).css("color", selectedColor);
         } else {
-          $(this).css("color", "black");
+          $(this).css("color", defaultColor);
         }
       });
     });
@@ -65,13 +69,16 @@ init_review_field = function () {
     //on click
     $(this).on('click', function(){
       val = $(this).data("review-value");
+      fieldId=$(this).parent().data("review-field");
+      $("input#"+fieldId).val(val)
+      
       spans = $(this).parent().children("span").filter(function(i){
         return $(this).data("review-value") <= val;
       });
 
       spans.each(function(){
         $(this).addClass("selected");
-        $(this).css("color", "orange");
+        $(this).css("color", selectedColor);
       });
 
       spans = $(this).parent().children("span").filter(function(i){
@@ -80,7 +87,7 @@ init_review_field = function () {
 
       spans.each(function(){
         $(this).removeClass("selected");
-        $(this).css("color", "black");
+        $(this).css("color", defaultColor);
       });
 
     });

@@ -5,15 +5,15 @@
   <div class="comment_rating-collection">
 
     <div class="review-rating">
-      <div class="score--small <%= progress_bar_color @review.child_learning.to_i %>"><%= @review.child_learning.to_i%></div><span>Student Learning</span>
+      <div class="score--small <%= score_color @review.child_learning.to_i %>"><%= @review.child_learning.to_i%></div><span>Student Learning</span>
     </div>
 
     <div class="review-rating">
-      <div class="score--small <%= progress_bar_color @review.child_happiness.to_i %>"><%= @review.child_happiness.to_i%></div><span>Student Engagement</span>
+      <div class="score--small <%= score_color @review.child_happiness.to_i %>"><%= @review.child_happiness.to_i%></div><span>Student Engagement</span>
     </div>
 
     <div class="review-rating">
-      <div class="score--small <%= progress_bar_color @review.communication.to_i %>"><%= @review.communication.to_i%></div><span>Student Satisfaction</span>
+      <div class="score--small <%= score_color @review.communication.to_i %>"><%= @review.communication.to_i%></div><span>Student Satisfaction</span>
     </div>
 
   </div>
