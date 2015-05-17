@@ -126,9 +126,20 @@
 
           <div class="comment cf">
      
-            <div class="comment__quote">Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo.</div>
+            <div class="comment__quote">Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo.
+           <div class="comment__tags">
+            <span class="tag x-sm">Enthusiastic</span>
+            <span class="tag x-sm">Awesome</span>
+            <span class="tag x-sm">Thoughtful</span>
+          </div>
+</div>
+
 
             <div class="comment_rating-collection">
+
+              <div class="review-rating overall">
+                <div class="score--small yellow">3</div><span>Overall Score</span>
+              </div>
 
               <div class="review-rating">
                 <div class="score--small red">1</div><span>Student Learning</span>
@@ -150,13 +161,12 @@
 
           <div class="comment cf">
      
-            <div class="comment__quote">Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo.
-            Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo.</div>
+            <div class="comment__quote">Ms. Kokores went above and beyond to help my child with her reading. My daughter struggled to get through her reading assignments, but by the end of the year, she was actually asking me to listen to her read out loud. She was proud of her progress!</div>
 
             <div class="comment_rating-collection">
 
               <div class="review-rating">
-                <div class="score--small red">1</div><span>Student Learning</span>
+                <div class="score--small green">4</div><span>Student Learning</span>
               </div>
 
               <div class="review-rating">
@@ -164,7 +174,7 @@
               </div>
 
               <div class="review-rating">
-                <div class="score--small yellow">3</div><span>Parent Satisfaction</span>
+                <div class="score--small green">5</div><span>Parent Satisfaction</span>
               </div>
 
             </div>
