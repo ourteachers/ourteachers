@@ -18,6 +18,20 @@
 
     <?php include('./templates/_header.php'); ?>
 
+
+
+    <div class="breadcrumb">
+      
+      <div class="container">
+        <a href="#">
+        <h4 class="#"><i class="fa fa-chevron-left"></i>Back to Yuba City High School</h4>
+        </a>
+      </div>
+
+    </div>
+
+
+
     <body>
 
     <div class="page-wrap">
