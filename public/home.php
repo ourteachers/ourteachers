@@ -25,7 +25,6 @@
 
         <!-- <img class="avatar" src="http://fullyfeline.com/wp-content/uploads/2015/01/kitten-lying-400x400.jpg"> -->
         <span class="site-logo" style="font-size: 24px;color:#FFF;"><span style="color:#B59BEC;font-weight:800;">our</span>teachers</span>
-        <span>Reviews of teachers, by parents for parents.</span>
 
         <div class="right social">
           <a class="btn--transparent" href="/take-action">Log In</a>
@@ -38,8 +37,17 @@
       <div class="hero__container overlay">
         <div class="hero__image" style="background-image: url(./images/classroom.jpg);">
           <div class="hero__text--center">
-            <h1 class="hero__title">Teacher ratings by parents for parents.</h1>
-            <input style="width:500px;" placeholder="Search for a teacher or school" id="main_search" name="main_search" required>
+            <h1 class="hero__title m--b">Reviews of teachers by parents, for parents.</h1>
+
+
+
+        <div class="#">
+          <div class="dfield">
+            <label class="dfield_label"><i class="fa fa-search"></i></label>
+            <input style="color: grey; height: 60px;" type="text" placeholder="Search for your school" autofocus/>
+          </div>
+        </div>
+
           </div>
         </div>
       </div>
@@ -49,11 +57,33 @@
 
         <div class="container">
             
-        
+        <div class="box">
+        <h4>Title 1</h4>
+            Gentrify occupy salvia small batch cred selvage. Austin PBR cardigan, yr master cleanse tilde Vice pug. Gentrify next level tilde bitters ethical.
+        </div>
+
+        <div class="box">
+        <h4>Title 2</h4>
+            Gentrify occupy salvia small batch cred selvage. Austin PBR cardigan, yr master cleanse tilde Vice pug. Gentrify next level tilde bitters ethical.
+        </div>
+
+        <div class="box">
+        <h4>Title 3</h4>
+            Gentrify occupy salvia small batch cred selvage. Austin PBR cardigan, yr master cleanse tilde Vice pug. Gentrify next level tilde bitters ethical.
+        </div>
+
+
+
+
         </div>
     </div>
 
 
+    <footer class="footie">
+        <div class="container">
+            <span>© OurTeachers 2015</span>
+        </div>
+    </footer>
 
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.3.min.js"><\/script>')</script>

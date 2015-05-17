@@ -34,6 +34,8 @@
 .hero--xlg {
   @extend %hero;
   height: 600px;
+  margin-top:-70px;
+  z-index: 1;
 }
 
 .hero__container {

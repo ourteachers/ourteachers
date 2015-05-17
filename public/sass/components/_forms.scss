@@ -158,8 +158,9 @@ input[type="checkbox"] {
   width: 100%;
   position: relative;
   input[type="text"] {
-    padding: 0 40px;
+    padding: 0 50px;
     font-size: 16px;
+    color: intial;
   }
 }
 
@@ -168,9 +169,9 @@ input[type="checkbox"] {
     position: absolute;
     z-index: 999;
     left: 0;
-    line-height: 65px;
+    line-height: 60px;
     margin: 0 0 0 15px;
-    font-size: 30px;
+    font-size: 24px;
     color: $light-text;
     font-weight: 400;
 }

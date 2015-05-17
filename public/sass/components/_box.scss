@@ -9,7 +9,7 @@
 
 .box {
 	margin-bottom: 40px;
-	text-align: center;
+	// text-align: center;
 	p {
 		padding: 0 40px;
 	}
@@ -27,4 +27,8 @@
 	@include breakpoint($medium) {
 		@include span(6);
 	}
+}
+
+.box {
+	font-size: 14px;
 }
