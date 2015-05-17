@@ -324,6 +324,7 @@
 
 .comment__quote {
 	@include span(5 of 8);
+	margin-bottom: 10px;
 
 }
 
@@ -353,4 +354,14 @@
 	margin-bottom: 10px;
 	border-bottom: 1px solid #eee;
 	padding-bottom: 10px;
+}
+
+.overall {
+	background: #dbe6ec;
+	font-weight: 600;
+	margin-bottom: 10px;
+}
+
+.comment__tags {
+	margin-top: 15px;
 }
