@@ -35,6 +35,7 @@ Rails.application.configure do
 
   config.google_places_api_key = "AIzaSyBwkgv3J1hvAPTQ7yc6uG9keKCKcNejoxc"
 
+
   # Raises error for missing translations
   # config.action_view.raise_on_missing_translations = true
 end
