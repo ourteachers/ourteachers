@@ -18,9 +18,11 @@
 
     <?php include('./templates/_header.php'); ?>
 
+    <div class="map">
+      
+      <!-- GOOGLE STUFF GOES HERE! -->
 
-      <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d12379.963692770394!2d-121.623616!3d39.129438!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x4a80a48e786570c8!2sYuba+City+High+School!5e0!3m2!1sen!2sus!4v1431827017740" width="100%" height="200" frameborder="0" style="border:0"></iframe>
-
+    </div>
 
     <div class="band--white">
 
