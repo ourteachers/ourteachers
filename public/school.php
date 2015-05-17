@@ -57,7 +57,7 @@
     </div>
 
       <div class="f--r">
-        <a href="#" class="btn--secondary x-large" style="margin-top:15px;"><i class="fa fa-plus-circle"></i>Add a Teacher</a>
+        <a href="#" class="btn--secondary x-large" style="margin-top:15px;"><i class="fa fa-user-plus"></i>Add a Teacher</a>
       </div>
 
       </div>
@@ -79,7 +79,8 @@
     </div>
    
 
-      <div class="teacher-card">
+    
+      <a href="#" class="teacher-card">
         <div class="media">
 
           <div class="mediaImg">
@@ -92,10 +93,9 @@
           </div>
             <div class="score green">5</div>
            <div class="review-count">24 Reviews</div>
-        </div> 
-
-      </div>
-
+        </div>
+      </a>
+    
       <div class="teacher-card">
         <div class="media">
 
@@ -145,9 +145,10 @@
 
       </div>
 
+      
       <div class="teacher-card">
-        <div class="media">
 
+        <div class="media">
           <div class="mediaImg">
             <img class="avatar" src="https://s3.amazonaws.com/uifaces/faces/twitter/madysondesigns/128.jpg">
           </div> 
@@ -161,6 +162,8 @@
         </div> 
 
       </div>
+
+
       <div class="teacher-card">
         <div class="media">
 
@@ -174,8 +177,7 @@
           </div>
             <div class="score yellow">3</div>
            <div class="review-count">564 Reviews</div>
-        </div> 
-
+        </div>
       </div>
 
    

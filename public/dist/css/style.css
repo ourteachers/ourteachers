@@ -1607,6 +1607,11 @@ nav ul li {
   background-color: #FFF;
   margin-bottom: 20px;
   border-radius: 4px; }
+  .teacher-card a {
+    color: #59626a; }
+
+.teacher-card--link a {
+  color: #59626a !important; }
 
 .progress-bar {
   background-color: #eee;
