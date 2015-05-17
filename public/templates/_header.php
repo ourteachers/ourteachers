@@ -1,10 +1,11 @@
 <header>
+  <div class="cf" style="border-top: 3px solid #B59BEC;">
+
   <div class="header-container" id="menu_container">
+    <div class="container">
 
-  <div class="container">
-
-    <img class="avatar" src="http://fullyfeline.com/wp-content/uploads/2015/01/kitten-lying-400x400.jpg">
-  
+    <!-- <img class="avatar" src="http://fullyfeline.com/wp-content/uploads/2015/01/kitten-lying-400x400.jpg"> -->
+    <span class="site-logo" style="font-size: 24px;"><span style="color:#B59BEC;font-weight:800;">our </span>teachers</span>
     <nav class="main-nav nav">
       <ul id="menu">
         <li>

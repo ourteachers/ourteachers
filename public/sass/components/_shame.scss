@@ -162,3 +162,22 @@
 		float: right;
 	}
 }
+
+
+.numberCircle {
+    border-radius: 10%;
+
+    width: 35px;
+    height: 35px;
+    padding: 3px;
+    font-size: 20px;
+    margin-top: -45px;
+    float: right;
+
+    background: $green;
+    color: #FFF;
+    font-weight: 800;
+    text-align: center;
+
+    // font: 32px Arial, sans-serif;
+}
