@@ -23,8 +23,7 @@
       <div class="header-transparent" id="menu_container">
         <div class="container">
 
-        <!-- <img class="avatar" src="http://fullyfeline.com/wp-content/uploads/2015/01/kitten-lying-400x400.jpg"> -->
-        <span class="site-logo" style="font-size: 24px;color:#FFF;"><span style="color:#B59BEC;font-weight:800;">our</span>teachers</span>
+    <a class="site-logo" href="/"><img src="./images/logo.png"></a>
 
         <div class="right social">
           <a class="btn--transparent" href="/take-action">Log In</a>
