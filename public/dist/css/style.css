@@ -609,7 +609,8 @@ strong {
     margin-right: 1.04167%; } }
 
 .box {
-  margin-bottom: 40px; }
+  margin-bottom: 40px;
+  text-align: center; }
   .box p {
     padding: 0 40px; }
   .box img {
@@ -624,9 +625,6 @@ strong {
     float: left;
     margin-left: 1.04167%;
     margin-right: 1.04167%; } }
-
-.box {
-  font-size: 14px; }
 
 .tag, .btn--primary, .btn--transparent, .btn--secondary, .btn {
   padding: 10px 30px;
@@ -866,18 +864,17 @@ input[type="radio"], input[type="checkbox"] {
   width: 100%;
   position: relative; }
   .dfield input[type="text"] {
-    padding: 0 50px;
-    font-size: 16px;
-    color: intial; }
+    padding: 0 40px;
+    font-size: 16px; }
 
 .dfield_label {
   display: initial;
   position: absolute;
   z-index: 999;
   left: 0;
-  line-height: 60px;
+  line-height: 65px;
   margin: 0 0 0 15px;
-  font-size: 24px;
+  font-size: 30px;
   color: #99a9b3;
   font-weight: 400; }
 
@@ -932,9 +929,7 @@ textarea {
   height: 500px; }
 
 .hero--xlg {
-  height: 600px;
-  margin-top: -70px;
-  z-index: 1; }
+  height: 600px; }
 
 .hero__container {
   display: block;
@@ -1686,7 +1681,7 @@ nav ul li {
 
 .header-transparent {
   background: transparent;
-  position: relative;
+  position: fixed;
   z-index: 3;
   width: 100%; }
 
@@ -1759,10 +1754,6 @@ nav ul li {
 
 .review-icon {
   font-size: 30px; }
-
-.footie {
-  padding: 40px 0;
-  border-top: 1px solid #eee; }
 
 .clear {
   *zoom: 1; }
