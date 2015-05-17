@@ -16,6 +16,7 @@
     <%= @teacher.school.name %>
   </p>
   <%= f.hidden_field :school_id, :value => @teacher.school.id%>
+  <%= f.file_field :avatar%>
   <div class="field">
     <%= f.label :first_name %><br>
     <%= f.text_field :first_name %>
