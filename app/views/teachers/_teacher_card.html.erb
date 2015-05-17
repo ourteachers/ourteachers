@@ -1,0 +1,13 @@
+<a href=<%= teacher_path(@teacher)%> class="teacher-card">
+   <div class="media">
+      <div class="mediaImg">         
+         <img class="avatar" src=<%= @teacher.avatar %> >
+      </div>
+      <div class="mediaBody">
+         <div><b><%= @teacher.name %></b></div>
+         <div>English</div>
+      </div>
+      <div class='score <%= score_color @teacher.aggregate_score %>'><%= @teacher.aggregate_score %></div>
+      <div class="review-count"><%= "#{@teacher.reviews.count} Reviews" %></div>
+   </div>
+</a>

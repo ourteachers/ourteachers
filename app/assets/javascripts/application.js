@@ -65,7 +65,7 @@ ready = function() {
     		place_id: places[0].place_id, 
     		name: places[0].name,
     		address: places[0].adr_address};
-        
+
 			$.post( "/schools/init", send_data)
 			  .done(function( data ) {
           console.log(data);
@@ -80,6 +80,31 @@ ready = function() {
 
 
   });
+
+
+    var request = {
+      placeId: 'ChIJ5WpT_a0Ym4AR03N8iKvK7ZQ'
+    };
+    
+    mapOptions = {};
+    map = new google.maps.Map(document.getElementById('map-canvas'),
+                                  mapOptions);
+    var service = new google.maps.places.PlacesService(map);
+
+    service.getDetails(request, function(place, status) {
+
+      var mapOptions = {
+        zoom: 15,
+        center: place.geometry.location,
+        disableDefaultUI: true,
+        draggable: false,
+        scrollwheel: false,
+        panControl: false
+        }
+      map = new google.maps.Map(document.getElementById('map-canvas'),
+                                  mapOptions);
+     $("div.profile_photo").remove();
+    });
 
 
 }

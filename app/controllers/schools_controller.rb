@@ -52,9 +52,8 @@ class SchoolsController < ApplicationController
   end
 
   def init_school
-    @school = School.find_or_create_by(google_reference: params["google_reference"])
+    @school = School.find_or_create_by(place_id: params["place_id"])
     @school.name = params["name"]
-    @school.place_id = params["place_id"]
     @school.address = params["address"]
     @school.save
     render :json => @school.to_json

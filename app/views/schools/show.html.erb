@@ -1,21 +1,49 @@
-<p id="notice"><%= notice %></p>
 
-<p>
-  <strong>Name:</strong>
-  <%= @school.name %>
-</p>
+    <div class="map" id="map-canvas">
+      
+      <!-- GOOGLE STUFF GOES HERE! -->
 
-<p>
-	<p>Adresss: </p>	
-  <%= @school.address.html_safe %>
-</p>
+    </div>
+<div class="band--white">
+   <div class="container">
+      <div class="school-info">
+         <h2><%= @school.name %></h2>
+         <span><%= @school.address.html_safe %></span>
+      </div>
+      <div class="col-1">
+         <span style="font-weight:800;letter-spacing:1px;">SCORE</span>
+         <div class='score--main <%= score_color @school.aggregate_score %>'><%= @school.aggregate_score %></div>
+      </div>
+      <div class="col-3">
+         <span class="title">Happiness</span>
+         <div class="progress-bar blue stripes">
+            <span class="yellow" style="width: 60%"></span>
+         </div>
+         <span class="title">Learning</span>
+         <div class="progress-bar blue stripes">
+            <span class="green" style="width: 100%"></span>
+         </div>
+         <span class="title">Communication</span>
+         <div class="progress-bar blue stripes">
+            <span class="green" style="width: 90%"></span>
+         </div>
+      </div>
+      <div class="f--r">
+         <a href=<%= school_add_teacher_path %> class="btn--secondary x-large" style="margin-top:15px;"><i class="fa fa-user-plus"></i>Add a Teacher</a>
+      </div>
+   </div>
+</div>
+<body>
+   <div class="container page-wrap">
+   <div class="col-6 m--b">
+      <p>"Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo." - Jane Doe</p>
+   </div>
+   <div class="col-6 m--b">
+      <p>Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo.</p>
+   </div>
 
-<h2>Teachers</h2>
-<%= link_to 'Add Teacher', school_add_teacher_path %>
-<ul>
-	<% @school.teachers.each do |teacher| %>
-		<li> <%= link_to teacher.name, teacher_path(teacher) %> </li>
-	<% end %>
-</ul>
-
-<%= link_to 'Back', schools_path %>
+   <% @school.teachers.each do |teacher| %>
+      <% @teacher = teacher %>
+      <%= render 'teachers/teacher_card' %>
+   <% end %>
+</body>
