@@ -57,7 +57,7 @@
     </div>
 
       <div class="f--r">
-        <a class="btn--secondary large" style="margin-top:15px;">Add a Teacher</a>
+        <a href="#" class="btn--secondary large" style="margin-top:15px;">Add a Teacher</a>
       </div>
 
       </div>
