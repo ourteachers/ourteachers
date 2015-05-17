@@ -1,35 +1,30 @@
-<%= form_for(@teacher) do |f| %>
-  <% if @teacher.errors.any? %>
-    <div id="error_explanation">
-      <h2><%= pluralize(@teacher.errors.count, "error") %> prohibited this teacher from being saved:</h2>
+<div class="page-wrap">
+  <div class="container wrapper-sm">
 
-      <ul>
-      <% @teacher.errors.full_messages.each do |message| %>
-        <li><%= message %></li>
-      <% end %>
-      </ul>
+  <div class="modal">
+  <%= form_for(@teacher) do |f| %>
+    <h1 class="m--b center">Add Teacher</h1>
+    <%= f.hidden_field :school_id, :value => @teacher.school.id%>
+    
+    <div class="input-grouping" style="padding-bottom: 10px;">
+      <div class="mediaImg">         
+         <img class="avatar" src=<%= @teacher.avatar %> >
+      </div> 
+      <%= f.file_field :avatar, size: 40%>
     </div>
+
+    <div class="input-grouping">
+      <%= f.text_field :first_name, autofocus: true, placeholder: "First Name" %>
+    </div>
+
+    <div class="input-grouping">
+        <%= f.text_field :last_name, placeholder: "Last Name", required: true, size: 40 %>
+    </div>
+
+           
+
+      <%= f.submit "Submit", class: "btn--primary large", style: "width:100%; height: 40px;" %>
   <% end %>
-  
-  <p>
-    <strong>School:</strong>
-    <%= @teacher.school.name %>
-  </p>
-  <%= f.hidden_field :school_id, :value => @teacher.school.id%>
-  <%= f.file_field :avatar%>
-  <div class="field">
-    <%= f.label :first_name %><br>
-    <%= f.text_field :first_name %>
+
   </div>
-  <div class="field">
-    <%= f.label :last_name %><br>
-    <%= f.text_field :last_name %>
-  </div>
-  <div class="field">
-    <%= f.label :gender %><br>
-    <%= f.number_field :gender %>
-  </div>
-  <div class="actions">
-    <%= f.submit %>
-  </div>
-<% end %>
+</div>

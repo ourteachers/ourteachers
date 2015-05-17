@@ -142,7 +142,7 @@
      
             <div class="comment__quote">Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo.
            <div class="comment__tags">
-            <span class="tag x-sm">Enthusiastic</span>
+            <% 
             <span class="tag x-sm">Awesome</span>
             <span class="tag x-sm">Thoughtful</span>
           </div>
