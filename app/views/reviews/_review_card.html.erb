@@ -7,19 +7,23 @@
     </div>
   </div>
   <div class="comment_rating-collection">
-
-    <div class="review-rating">
-      <div class="score--small <%= score_color @review.child_learning.to_i %>"><%= @review.child_learning.to_i%></div><span>Student Learning</span>
+    <div class="review-rating overall">
+      <div class="score--small <%= score_color @review.average_score.to_f %>"><%= @review.average_score.to_f.round(1) %></div><span>Overall Score</span>
     </div>
 
     <div class="review-rating">
-      <div class="score--small <%= score_color @review.child_happiness.to_i %>"><%= @review.child_happiness.to_i%></div><span>Student Engagement</span>
+      <div class="score--small <%= score_color @review.child_learning.to_f %>"><%= @review.child_learning.to_i%></div><span>Student Learning</span>
     </div>
 
     <div class="review-rating">
-      <div class="score--small <%= score_color @review.communication.to_i %>"><%= @review.communication.to_i%></div><span>Student Satisfaction</span>
+      <div class="score--small <%= score_color @review.child_happiness.to_f %>"><%= @review.child_happiness.to_i%></div><span>Student Engagement</span>
+    </div>
+
+    <div class="review-rating">
+      <div class="score--small <%= score_color @review.communication.to_f %>"><%= @review.communication.to_i%></div><span>Parent Satisfaction</span>
     </div>
 
   </div>
 
 </div>
+
