@@ -30,16 +30,35 @@
    </div>
 </div>
 <body>
-   <div class="container page-wrap">
-   <div class="col-6 m--b">
-      <p><%= ('"' + @highlighted_reviews[0].comments + '"') if @highlighted_reviews[0] %></p>
-   </div>
-   <div class="col-6 m--b">
-      <p><%= ('"' + @highlighted_reviews[1].comments + '"') if @highlighted_reviews[1] %></p>
-   </div>
+   <div class="container page-wrap" style="padding-top: 0;">
 
-   <% @school.teachers.each do |teacher| %>
-      <% @teacher = teacher %>
-      <%= render 'teachers/teacher_card' %>
-   <% end %>
+   <div class="page-wrap">
+      <div class="container">
+
+<!--          <div class="col-6 m--b">
+            <p>"Ms. Kokores went above and beyond to help my child with her reading. My daughter struggled to get through her reading assignments, but by the end of the year, she was actually asking me to listen to her read out loud. She was proud of her progress!"</p>
+         </div>
+
+         <div class="col-6 m--b">
+            <p>"My child really enjoyed Ms. Kokores' class. She was always warm and created a fun learning environment."</p>
+         </div> -->
+
+         <div class="col-6 m--b">
+            <p><%= ('"' + @highlighted_reviews[0].comments + '"') if @highlighted_reviews[0] %></p>
+         </div>
+         <div class="col-6 m--b">
+            <p> <%=('"' + @highlighted_reviews[1].comments + '"') if @highlighted_reviews[1] %></p>
+         </div>
+
+
+         </div>
+         <div class="container">
+            <% @school.teachers.each do |teacher| %>
+               <% @teacher = teacher %>
+               <%= render 'teachers/teacher_card' %>
+            <% end %>
+         </div>
+      </div> 
+   </div     
+
 </body>
