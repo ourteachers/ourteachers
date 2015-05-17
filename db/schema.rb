@@ -11,13 +11,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 20150517061554) do
-
-  create_table "characterics", force: true do |t|
-    t.string   "name"
-    t.datetime "created_at"
-    t.datetime "updated_at"
-  end
+ActiveRecord::Schema.define(version: 20150517171649) do
 
   create_table "qualities", force: true do |t|
     t.string   "name"
@@ -30,8 +24,8 @@ ActiveRecord::Schema.define(version: 20150517061554) do
     t.integer "review_id",  null: false
   end
 
-  add_index "qualities_reviews", ["quality_id", "review_id"], name: "index_subjects_reviews_on_quality_id_and_review_id"
-  add_index "qualities_reviews", ["review_id", "quality_id"], name: "index_subjects_reviews_on_review_id_and_quality_id"
+  add_index "qualities_reviews", ["quality_id", "review_id"], name: "index_qualities_reviews_on_quality_id_and_review_id"
+  add_index "qualities_reviews", ["review_id", "quality_id"], name: "index_qualities_reviews_on_review_id_and_quality_id"
 
   create_table "reviews", force: true do |t|
     t.integer  "child_happiness"
@@ -92,6 +86,8 @@ ActiveRecord::Schema.define(version: 20150517061554) do
     t.string   "last_sign_in_ip"
     t.datetime "created_at"
     t.datetime "updated_at"
+    t.string   "first_name"
+    t.string   "last_name"
   end
 
   add_index "users", ["email"], name: "index_users_on_email", unique: true

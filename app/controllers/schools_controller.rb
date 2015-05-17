@@ -10,6 +10,7 @@ class SchoolsController < ApplicationController
   # GET /schools/1
   # GET /schools/1.json
   def show
+    @highlighted_reviews = @school.reviews.sort_by {|review| review.average_score }.take(2).reverse
   end
 
   # GET /schools/new

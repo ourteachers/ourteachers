@@ -3,15 +3,15 @@ Rails.application.routes.draw do
 
   root 'homes#show', via: :get
 
-  devise_for :users
+  devise_for :users, :controllers => { registrations: 'registrations' }
   resources :subjects
 
-  resources :reviews, only: [:create, :destroy, :new]
+  resources :reviews, only: [:create, :new]
 
-  resources :teachers, only: [:show, :edit, :new, :destroy, :create]
+  resources :teachers, only: [:show, :edit, :new, :create]
   get "/teachers/:id/add_review" => "teachers#add_review", as: "teacher_add_review"
 
-  resources :schools
+  resources :schools, only: [:show]
   get "/schools/:id/add_teacher" => "schools#add_teacher", as: "school_add_teacher"
 
   post "/schools/init" => "schools#init_school", as: "init_school"
