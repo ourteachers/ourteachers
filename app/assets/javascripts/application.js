@@ -15,9 +15,84 @@
 //= require turbolinks
 //= require_tree .
 
+init_review_field = function () {
+  $(this).children("span").each(function(){
+    function setReviewColors(context, color)
+    {
+      val = $(context).data("review-value");
+      spans = $(context).parent().children("span").filter(function(i){
+        return $(this).data("review-value") <= val;
+      });
+
+      spans.each(function(){
+        $(this).css("color", color);
+      });
+    }
+
+    //mouse enter
+    $(this).on('mouseenter', function(){
+      val = $(this).data("review-value");
+      spans = $(this).parent().children("span").filter(function(i){
+        return $(this).data("review-value") <= val;
+      });
+      spans.each(function(){
+        $(this).css("color", "red");
+      });
+
+      spans = $(this).parent().children("span").filter(function(i){
+        return $(this).data("review-value") > val;
+      });
+      spans.each(function(){
+        $(this).css("color", "black");
+      });
+
+    });
+
+    //mouse leave
+    $(this).on('mouseleave', function(){
+      val = $(this).data("review-value");
+      spans = $(this).parent().children("span");
+
+      spans.each(function(){
+        if($(this).hasClass("selected")){
+          $(this).css("color", "orange");
+        } else {
+          $(this).css("color", "black");
+        }
+      });
+    });
+
+    //on click
+    $(this).on('click', function(){
+      val = $(this).data("review-value");
+      spans = $(this).parent().children("span").filter(function(i){
+        return $(this).data("review-value") <= val;
+      });
+
+      spans.each(function(){
+        $(this).addClass("selected");
+        $(this).css("color", "orange");
+      });
+
+      spans = $(this).parent().children("span").filter(function(i){
+        return $(this).data("review-value") > val;
+      });
+
+      spans.each(function(){
+        $(this).removeClass("selected");
+        $(this).css("color", "black");
+      });
+
+    });
+
+  });
+}
+
 ready = function() {
   qualityCount = 0;
 	
+
+  $("div.review-icon-group").each(init_review_field);
 
 	$("form#new_review").submit(submit_review);
 
@@ -82,11 +157,14 @@ ready = function() {
 
       var mapOptions = {
         zoom: 15,
+        minZoom: 15,
+        maxZoom: 15,
         center: place.geometry.location,
         disableDefaultUI: true,
         draggable: false,
         scrollwheel: false,
-        panControl: false
+        panControl: false,
+        disableDoubleClickZoom: false
         }
       map = new google.maps.Map(document.getElementById('map-canvas'),
                                   mapOptions);

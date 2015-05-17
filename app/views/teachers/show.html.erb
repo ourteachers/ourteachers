@@ -1,21 +1,90 @@
-<p id="notice"><%= notice %></p>
-<h1>
-  <%= @teacher.name %>
-</h1>
-  <p>
-    <%= (link_to @teacher.school.name, school_path(@teacher.school)) + " | #{@teacher.reviews.count} Reviews" %> | <%= link_to 'Edit', edit_teacher_path(@teacher) %>
-  </p>
+<body>
 
-<h3>Reviews</h3>
-<p>
-	<%= link_to 'Create Review', new_review_path(teacher_id: @teacher.id) %>
-</p>
-<ul>
-  <% @teacher.reviews.each do |review| %>
-  	<% @review = review %>
-		<li><%= render 'reviews/review_line' %></li>
-  <% end %>
-</ul>
+    <div class="page-wrap">
+
+      <div class="container">
+
+        <div class="sidebar">
+  
+        <!-- TEACHER AVATAR -->
+        <div class="d--b clear center">
+			<img class="avatar-xl center" src=<%= @teacher.avatar %> >
+        </div>
+
+        <!-- NAME -->
+        <div class="d--b center m--b">
+            <h2><%= "#{@teacher.first_name} #{@teacher.last_name}"%></h2>
+        </div>
+
+        <!-- TEACHER SCORE -->
+        <div class="col-3">
+          <span style="font-weight:800;letter-spacing:1px;">SCORE</span>
+         <div class='score--main <%= score_color @teacher.aggregate_score %>'><%= @teacher.aggregate_score %></div>
+        </div>
+
+        <div class="col-9 m--b">
+
+          <span class="title">Student Learning</span>
+          <div class="progress-bar blue stripes">
+            <span class="<%= progress_bar_color @teacher.aggregate_learning %>" style="width: <%="#{@teacher.aggregate_learning}%" %>"></span>
+          </div>
+
+          <span class="title">Student Enagement</span>
+          <div class="progress-bar blue stripes">
+            <span class="<%= progress_bar_color @teacher.aggregate_happiness %>" style="width: <%="#{@teacher.aggregate_happiness}%" %>"></span>
+          </div>
+
+          <span class="title">Parent Satisfaction</span>
+          <div class="progress-bar blue stripes">
+            <span class="<%= progress_bar_color @teacher.aggregate_communication %>" style="width: <%="#{@teacher.aggregate_communication}%" %>"></span>
+          </div>
+        </div>
 
 
+        <!-- TEACHER META INFORAMTION -->
+        <div class="col-12">
 
+            <div class="teacher__meta-grouping">
+            <h4>Location</h4>
+							<%= @teacher.school.address.html_safe %>
+            </div>
+
+            <div class="teacher__meta-grouping">
+              <div class="heading">Subject</div>
+              <span>Math</span>
+            </div>
+
+            <div class="teacher__meta-grouping">           
+              <div class="heading">Grade</div>
+              <span>6th</span>
+            </div>
+            <div class="teacher__meta-grouping">
+              <div class="heading">Teacher Bio</div>
+              <p><%= @teacher.bio %></p>
+            </div>
+        </div>
+
+      </div>
+
+      <!-- MAIN CONTENT AREA-->
+
+      <div class="main-content pad-width">
+
+        <!-- SUMBIT A REVIEW BUTTON -->
+        <div class="center">
+          <a href=<%= teacher_add_review_path %> class="btn--secondary x-large m--b" style="margin-top:15px;">Submit a Review</a>
+        </div>
+
+        <h3 class="parent-reviews">Parent Reviews</h3>
+					<% @teacher.reviews.each do |review| %>
+						<% @review = review %>
+						<%= render "reviews/review_card" %>
+					<% end %>
+
+
+        </div>
+   
+
+      </div>
+
+    </body>
