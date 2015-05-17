@@ -10,7 +10,7 @@
         <link rel="apple-touch-icon" href="apple-touch-icon.png">
         <!-- Place favicon.ico in the root directory -->
 
-        <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css">
         <link rel="stylesheet" href="dist/css/style.css">
         <link href='http://fonts.googleapis.com/css?family=Roboto:400,300,500,700,900,400italic' rel='stylesheet' type='text/css'>
         <script src="js/vendor/modernizr-2.8.3.min.js"></script>
@@ -57,7 +57,7 @@
     </div>
 
       <div class="f--r">
-        <a href="#" class="btn--secondary x-large" style="margin-top:15px;">Add a Teacher</a>
+        <a href="#" class="btn--secondary x-large" style="margin-top:15px;"><i class="fa fa-plus-circle"></i>Add a Teacher</a>
       </div>
 
       </div>
