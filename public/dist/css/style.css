@@ -411,6 +411,10 @@ strong {
   max-width: 700px;
   margin: 0 auto; }
 
+.wrapper-sm {
+  max-width: 550px;
+  margin: 0 auto; }
+
 .hole {
   *zoom: 1;
   padding: 20px 0; }
@@ -1084,6 +1088,10 @@ textarea {
   max-width: 700px;
   margin: 0 auto; }
 
+.wrapper-sm {
+  max-width: 550px;
+  margin: 0 auto; }
+
 .hole {
   *zoom: 1;
   padding: 20px 0; }
@@ -1656,6 +1664,14 @@ nav ul li {
   position: fixed;
   z-index: 3;
   width: 100%; }
+
+.input-grouping {
+  margin-bottom: 10px; }
+
+.modal {
+  padding: 2.25em;
+  background-color: #FFF;
+  margin-bottom: 20px; }
 
 .clear {
   *zoom: 1; }
