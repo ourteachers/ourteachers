@@ -1728,7 +1728,9 @@ nav ul li {
   margin-bottom: 5px; }
 
 .teacher__meta-grouping {
-  margin-bottom: 10px; }
+  margin-bottom: 10px;
+  border-bottom: 1px solid #eee;
+  padding-bottom: 10px; }
 
 .clear {
   *zoom: 1; }
