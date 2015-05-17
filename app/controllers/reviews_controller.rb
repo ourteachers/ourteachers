@@ -27,7 +27,10 @@ class ReviewsController < ApplicationController
   # POST /reviews.json
   def create
     @review = Review.new(review_params)
-
+    qualities = params["qualities"].split(",");
+    qualities.each do |quality|
+      @review.qualities << Quality.find_by(name: quality)
+    end
     respond_to do |format|
       if @review.save
         format.html { redirect_to @review.teacher, notice: 'Review was successfully created.' }

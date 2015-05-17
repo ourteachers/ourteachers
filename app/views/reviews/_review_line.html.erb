@@ -1,1 +1,2 @@
-<%= @review.comments %>
+ Comment: <%= @review.comments %> <br>
+ Qualities: <% @review.qualities.each do |quality| %> <%= quality.name %> <% end %>

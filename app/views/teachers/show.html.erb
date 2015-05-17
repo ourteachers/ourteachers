@@ -8,7 +8,7 @@
 
 <h3>Reviews</h3>
 <p>
-	<%= link_to 'Create Review', teacher_add_review_path %>
+	<%= link_to 'Create Review', new_review_path(teacher_id: @teacher.id) %>
 </p>
 <ul>
   <% @teacher.reviews.each do |review| %>

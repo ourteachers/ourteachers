@@ -14,3 +14,47 @@
 //= require jquery_ujs
 //= require turbolinks
 //= require_tree .
+
+ready = function() {
+  qualityCount = 0;
+	
+
+	$("form#new_review").submit(submit_review);
+
+  $('span.quality').click(function() {
+    $this = $(this);
+
+	if ($this.hasClass("tag--active")) {
+      $this.removeClass("tag--active");
+      qualityCount--;
+    } else if(qualityCount < 3) {
+      $this.addClass("tag--active");
+      qualityCount++;
+    }
+  });
+
+	$('span.quality').hover(function() {
+	    $this = $(this);
+	  if ((!$this.hasClass("tag--active")) && qualityCount >= 3) {
+	    	$this.css("cursor", "not-allowed");
+		} else
+		{
+			$this.css("cursor", "pointer");
+		}
+  });
+
+}
+
+submit_review = function( event ) {
+		var qualitiesArray = [];
+
+		$('span.tag--active').each(function(){
+			qualitiesArray.push($(this).text());
+		});
+		
+		$("input#review_qualities").val(qualitiesArray);
+		console.log("submit");
+	}
+
+$(document).ready(ready);
+$(document).on('page:load', ready);

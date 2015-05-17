@@ -1,8 +1,8 @@
 class CreateJoinTableCharacteristicTeacher < ActiveRecord::Migration
   def change
-	create_join_table :qualities, :teachers do |t|
-       t.index [:quality_id, :teacher_id]
-       t.index [:teacher_id, :quality_id]
+	create_join_table :qualities, :reviews do |t|
+       t.index [:quality_id, :review_id]
+       t.index [:review_id, :quality_id]
     end
   end
 end

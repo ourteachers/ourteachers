@@ -25,13 +25,13 @@ ActiveRecord::Schema.define(version: 20150516230541) do
     t.datetime "updated_at"
   end
 
-  create_table "qualities_teachers", id: false, force: true do |t|
+  create_table "qualities_reviews", id: false, force: true do |t|
     t.integer "quality_id", null: false
-    t.integer "teacher_id", null: false
+    t.integer "review_id", null: false
   end
 
-  add_index "qualities_teachers", ["quality_id", "teacher_id"], name: "index_subjects_teachers_on_quality_id_and_teacher_id"
-  add_index "qualities_teachers", ["teacher_id", "quality_id"], name: "index_subjects_teachers_on_teacher_id_and_quality_id"
+  add_index "qualities_reviews", ["quality_id", "review_id"], name: "index_subjects_reviews_on_quality_id_and_review_id"
+  add_index "qualities_reviews", ["review_id", "quality_id"], name: "index_subjects_reviews_on_review_id_and_quality_id"
 
   create_table "reviews", force: true do |t|
     t.integer  "child_happiness"
