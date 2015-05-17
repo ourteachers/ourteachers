@@ -75,7 +75,7 @@ ActiveRecord::Schema.define(version: 20150517201612) do
     t.string   "avatar_content_type"
     t.integer  "avatar_file_size"
     t.datetime "avatar_updated_at"
-    t.string   "bio"
+    t.text   "bio"
   end
 
   create_table "users", force: true do |t|
