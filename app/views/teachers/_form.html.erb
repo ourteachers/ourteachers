@@ -20,7 +20,14 @@
     <div class="input-grouping">
         <%= f.text_field :last_name, placeholder: "Last Name", required: true, size: 40 %>
     </div>
-           
+    
+    <div class="input-grouping">
+      <select class="chosen-select" multiple="multiple" data-placeholder="Subject">
+        <option value="AL">Alabama</option>
+        <option value="WY">Wyoming</option>
+      </select>
+    </div>
+
     <fieldset>
         <%= f.text_area :bio, rows: 6, class: "form-control", placeholder: "Biography" %>
     </fieldset>

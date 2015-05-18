@@ -12,10 +12,12 @@
 //
 //= require jquery
 //= require jquery_ujs
+//= require chosen-jquery
 //= require turbolinks
 //= require_tree .
 
 init_review_field = function () {
+
   $(this).children("span").each(function(){
     var defaultColor = "#dbe6ec";
     var hoverColor = "#FEC300";
@@ -96,6 +98,7 @@ init_review_field = function () {
 }
 
 ready = function() {
+  $(".chosen-select").chosen();
   qualityCount = 0;
 	
 
@@ -133,12 +136,13 @@ ready = function() {
     /** @type {HTMLInputElement} */(input));
   google.maps.event.addListener(searchBox, 'places_changed', function() {
     var places = searchBox.getPlaces();
+
     if (places[0].types.indexOf("school") > -1) {
     	send_data = { 
     		google_reference: places[0].reference, 
     		place_id: places[0].place_id, 
     		name: places[0].name,
-    		address: places[0].adr_address};
+    		address: places[0].formatted_address};
 
 			$.post( "/schools/init", send_data)
 			  .done(function( data ) {

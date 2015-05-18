@@ -35,3 +35,4 @@ gem 'jquery-turbolinks'
 gem 'StreetAddress', :require => "street_address"
 gem "paperclip", "~> 4.2"
 gem 'aws-sdk', '< 2.0'
+gem 'chosen-rails'

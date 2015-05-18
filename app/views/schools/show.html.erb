@@ -4,7 +4,7 @@
    <div class="container">
       <div class="school-info">
          <h2><%= @school.name %></h2>
-         <span><%= @school.address.html_safe %></span>
+         <span><%= @school.address.html_safe rescue "" %></span>
       </div>
       <div class="col-1">
          <span style="font-weight:800;letter-spacing:1px;">SCORE</span>
@@ -44,10 +44,12 @@
          </div> -->
 
          <div class="col-6 m--b">
-            <p><%= ('"' + @highlighted_reviews[0].comments + '"') if @highlighted_reviews[0] %></p>
+            <p><%= ('"' + @highlighted_reviews[0].comments + '"') if (@highlighted_reviews[0] and !@highlighted_reviews[0].comments.blank?) %></p>
          </div>
          <div class="col-6 m--b">
-            <p> <%=('"' + @highlighted_reviews[1].comments + '"') if @highlighted_reviews[1] %></p>
+            <p>
+               <%= ('"' + @highlighted_reviews[1].comments + '"') if (@highlighted_reviews[0] and !@highlighted_reviews[1].comments.blank?) %>
+            </p>         
          </div>
 
 
