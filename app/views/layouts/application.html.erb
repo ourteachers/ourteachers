@@ -17,19 +17,10 @@
   <%= csrf_meta_tags %>
 </head>
 
-<% if Rails.env.development? %>
-	<% if !(@hide_frame == 1) %>
-		<%= render 'layouts/header' %>
-	<% end %>
+<% if !(@hide_frame == 1) %>
+	<%= render 'layouts/header' %>
 <% end %>
 
-<body>
-
-<% if Rails.env.development? %>
-	<%= yield %>
-<% else %>	
-	<%= render 'homes/landing_page' %>
-<% end %>
-
+<%= yield %>
 </body>
 </html>
