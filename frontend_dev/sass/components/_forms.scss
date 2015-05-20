@@ -53,7 +53,7 @@ input[type="submit"],
 input[type="reset"],
 input[type="button"] {
 	border: none;
-	padding: 0;
+	// padding: 0;
 
   &:hover {
     
@@ -116,6 +116,7 @@ select {
   font-size: 14px;
   margin-bottom: 15px;
   @include border-radius(3px);
+  color: $body-color;
 }
 
 

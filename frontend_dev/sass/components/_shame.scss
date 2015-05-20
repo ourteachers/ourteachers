@@ -379,9 +379,24 @@
 
 .footie {
 	padding: 40px 0;
-	border-top: 1px solid #eee;
 }
 
 .loginhome {
 	color: $white;
+}
+
+#mc_embed_signup .button {
+	background-color: $primary-color !important;
+}
+
+#mc_embed_signup input.email {
+	padding: 10px !important;
+}
+
+.home__icon {
+	width: 25%;
+}
+
+.c-pad {
+	padding: 0 5%;
 }
