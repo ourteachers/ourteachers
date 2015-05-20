@@ -626,7 +626,9 @@ strong {
     margin-right: 1.04167%; } }
 
 .box {
-  font-size: 14px; }
+  font-size: 14px;
+  text-align: center;
+  padding: 20px; }
 
 .tag, .btn--primary, .btn--transparent, .btn--secondary, .btn {
   padding: 10px 30px;
@@ -816,8 +818,7 @@ label.light {
   display: inline-block; }
 
 .button, button, input[type="submit"], input[type="reset"], input[type="button"] {
-  border: none;
-  padding: 0; }
+  border: none; }
   .button:focus, button:focus, input[type="submit"]:focus, input[type="reset"]:focus, input[type="button"]:focus {
     outline: none; }
 
@@ -839,7 +840,8 @@ input[type="text"], input[type="password"], input[type="date"], input[type="date
   margin-bottom: 15px;
   border-radius: 3px;
   background-clip: padding-box;
-  /* stops bg color from leaking outside the border: */ }
+  /* stops bg color from leaking outside the border: */
+  color: #59626a; }
 
 input:focus, textarea:focus, select:focus {
   border: 1px solid #B59BEC; }
@@ -1764,11 +1766,22 @@ nav ul li {
   font-size: 30px; }
 
 .footie {
-  padding: 40px 0;
-  border-top: 1px solid #eee; }
+  padding: 40px 0; }
 
 .loginhome {
   color: #FFFFFF; }
+
+#mc_embed_signup .button {
+  background-color: #B59BEC !important; }
+
+#mc_embed_signup input.email {
+  padding: 10px !important; }
+
+.home__icon {
+  width: 25%; }
+
+.c-pad {
+  padding: 0 5%; }
 
 .clear {
   *zoom: 1; }
