@@ -113,95 +113,60 @@
         <h3 class="parent-reviews">Parent Reviews</h3>
 
 
-         <!--  THIS IS A COMMENT BOX -->
-          <div class="comment cf">
-     
-            <div class="comment__quote">Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo.</div>
-
-            <div class="comment_rating-collection">
-
-              <div class="review-rating">
-                <div class="score--small red">1</div><span>Student Learning</span>
-              </div>
-
-              <div class="review-rating">
-                <div class="score--small green">5</div><span>Student Engagement</span> 
-              </div>
-
-              <div class="review-rating">
-                <div class="score--small yellow">3</div><span>Student Satisfaction</span>
-              </div>
-
-            </div>
-          
-          </div>
 
          <!--  THIS IS A COMMENT BOX -->
 
           <div class="comment cf">
-     
-            <div class="comment__quote">Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo.
-           <div class="comment__tags">
-            <% 
-            <span class="tag x-sm">Awesome</span>
-            <span class="tag x-sm">Thoughtful</span>
-          </div>
-</div>
 
+            <div class="comment__main cf">
 
-            <div class="comment_rating-collection">
+              <div class="comment_rating-collection">
+                <div class="review-rating overall">
+                  <span>Overall Score</span><div class="score--small yellow">3</div>
+                </div>
 
-              <div class="review-rating overall">
-                <div class="score--small yellow">3</div><span>Overall Score</span>
+                <div class="review-rating">
+                  <span>Student Learning</span><div class="score--small red">1</div>
+                </div>
+
+                <div class="review-rating">
+                  <span>Student Engagement</span><div class="score--small green">5</div> 
+                </div>
+
+                <div class="review-rating">
+                  <span>Parent Satisfaction</span><div class="score--small yellow">3</div>
+                </div>
               </div>
 
-              <div class="review-rating">
-                <div class="score--small red">1</div><span>Student Learning</span>
+              <div class="comment__quote">
+                
+                <p>Cred photo booth pickled, Pitchfork mumblecore banjo Godard 3 wolf moon flannel Vice umami cray Portland tote bag. Actually try-hard 90's, Tumblr hashtag kogi banjo.</p>
+                
+                <div class="comment__tags">
+                  <span class="tag x-sm">Awesome</span>
+                  <span class="tag x-sm">Thoughtful</span>
+                  <span class="tag x-sm">Super</span>
+                </div>
+
               </div>
 
-              <div class="review-rating">
-                <div class="score--small green">5</div><span>Student Engagement</span> 
-              </div>
+            </div> <!-- COMMENT__MAIN CLOSE -->
 
-              <div class="review-rating">
-                <div class="score--small yellow">3</div><span>Parent Satisfaction</span>
-              </div>
-
+            <div class="comment__meta d--b">
+              <span class="comment__date">Posted on 5/26/15</span>
+              <a href="#" class="f--r"><i class="fa fa-flag"></i> Report</a>
             </div>
-          
+
           </div>
 
-         <!--  THIS IS A COMMENT BOX -->
-
-          <div class="comment cf">
-     
-            <div class="comment__quote">Ms. Kokores went above and beyond to help my child with her reading. My daughter struggled to get through her reading assignments, but by the end of the year, she was actually asking me to listen to her read out loud. She was proud of her progress!</div>
-
-            <div class="comment_rating-collection">
-
-              <div class="review-rating">
-                <div class="score--small green">4</div><span>Student Learning</span>
-              </div>
-
-              <div class="review-rating">
-                <div class="score--small green">5</div><span>Student Engagement</span> 
-              </div>
-
-              <div class="review-rating">
-                <div class="score--small green">5</div><span>Parent Satisfaction</span>
-              </div>
-
-            </div>
-          
-          </div>
+          <!-- COMMENT BOX CLOSE -->
 
 
 
+        </div><!-- MAIN CONTENT CLOSE -->
 
-        </div>
-   
-
-      </div>
+      </div><!-- CONTAINER CLOSE -->
+    </div><!-- PAGE-WRAP CLOSE -->
    
 
 
