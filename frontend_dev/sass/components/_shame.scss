@@ -178,6 +178,7 @@
 }
 
 .score--small {
+	float: right;
     border-radius: 10%;
     width: 25px;
     height: 25px;
@@ -187,7 +188,7 @@
     font-weight: 800;
     text-align: center;
     display:inline-block;
-    margin-right: 10px;
+    margin-top: -2px;
 }
 
 .score--main {
@@ -314,7 +315,8 @@
 
 .review-rating {
 	display:block;
-	margin-bottom: 5px;
+	padding: 5px 0;
+
 }
 
 .comment {
@@ -331,6 +333,20 @@
 
 }
 
+.comment__date {
+	color: $light-text;
+}
+
+.comment__meta {
+	margin-top: 10px;
+	color: $light-grey;
+	font-size: 12px;
+	border-top: 1px solid #eee;
+	padding-top: 10px;
+	a {
+		color: $light-grey;
+	}
+}
 .comment_rating-collection {
 	@include span(3 of 8);
 }
@@ -360,9 +376,8 @@
 }
 
 .overall {
-	background: #dbe6ec;
 	font-weight: 600;
-	margin-bottom: 10px;
+	padding-top: 0;
 }
 
 .comment__tags {
